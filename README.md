@@ -65,6 +65,27 @@ or
         mode: single
     ```
 
+4. Create sensors to use data in lovelace. Rest sensor is used to retrieve all json, fetch twice a day
+    ```yml
+    rest:
+      - scan_interval: 43200
+        resource_template: http://{YOUR_HOMEASSISTANT_IP}:8123/local/formula1/drivers.json
+        sensor:
+          - name: "Rest Drivers"
+            value_template: "OK"
+            json_attributes_path: "$.data"
+            json_attributes:
+              - "drivers"
+      - scan_interval: 43200
+        resource_template: http://{YOUR_HOMEASSISTANT_IP}:8123/local/formula1/constructors.json
+        sensor:
+          - name: "Rest Constructors"
+            value_template: "OK"
+            json_attributes_path: "$.data"
+            json_attributes:
+              - "constructors"
+    ```
+
 ## Data
 ### drivers.json
 > ```json 

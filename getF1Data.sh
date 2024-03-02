@@ -10,6 +10,7 @@ year_GP="${1:-2024}";
 current_version=$(curl -s GET "https://api.github.com/repos/f1db/f1db/tags?per_page=1" | jq -r '.[].name');
 short_version="${current_version:1}";
 
+mkdir /homeassistant/www/formula1;
 mkdir "$folder";
 mkdir "$folder"/raw;
 cd "$folder"/raw;
@@ -79,8 +80,11 @@ jq \
   | map(if $constructors[.constructorId] then .wins = $constructors[.constructorId] else . end)' \
   constructors.json > tmpFile.json && mv tmpFile.json constructors.json;
 
-cp drivers.json ../drivers.json;
-cp constructors.json ../constructors.json;
+jq '{ "data": {"drivers": .}}' drivers.json > tmpFile.json && mv tmpFile.json drivers.json;
+jq '{ "data": {"constructors": .}}' constructors.json > tmpFile.json && mv tmpFile.json constructors.json;
+
+mv drivers.json /homeassistant/www/formula1/drivers.json;
+mv constructors.json /homeassistant/www/formula1/constructors.json;
 
 (rm "$folder"*.zip) > /dev/null 2>&1;
 (rm -rf "$folder"/raw) > /dev/null 2>&1;
