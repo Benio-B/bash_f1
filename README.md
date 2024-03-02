@@ -85,6 +85,13 @@ or
             json_attributes:
               - "constructors"
     ```
+5. Add external dirs var
+    ```yml
+    homeassistant:
+      allowlist_external_dirs:
+      - /share/f1
+      - /config/www
+    ``````
 
 ## Roadmap
 ### Some day
