@@ -62,7 +62,7 @@ done;
 
 
 echo "$constructor_ids" | jq -r '.[]' | while read -r constructor_id; do
-    constructor=$(jq "[.[] | select(.id==\"$constructor_id\")]" f1db-constructors.json);
+    constructor=$(jq --arg constructor_id "$constructor_id" '[.[] | select(.id==$constructor_id) | { "id": .id, "name": .name }]' f1db-constructors.json);
     jq --argjson constructor "$constructor" '. += $constructor' constructors.json > tmpFile.json && mv tmpFile.json constructors.json
 
     pointConstructor=$(jq --arg constructor_id "$constructor_id" --argjson year "$year_GP" '[.[] | select(.constructorId==$constructor_id and .year==$year)]' f1db-seasons-constructor-standings.json);
