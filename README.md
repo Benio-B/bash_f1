@@ -87,9 +87,6 @@ or
     ```
 
 ## Roadmap
-### Early
-- Remove all dates in script
-- Add constructor data (id, name, ...) in drivers.json
 ### Some day
 - Add data about races and seasons
 

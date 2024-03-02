@@ -13,6 +13,7 @@ short_version="${current_version:1}";
 mkdir /homeassistant/www/formula1;
 mkdir "$folder";
 mkdir "$folder"/raw;
+
 cd "$folder"/raw;
 
 wget -O "$folder"/raw/f1.zip  https://github.com/f1db/f1db/releases/download/$current_version/f1db-json-splitted-$short_version.zip;
@@ -22,7 +23,6 @@ unzip "$folder"/raw/f1.zip
 
 driver_ids=$(jq "[.[] | select(.year==$year_GP)] | map(.driverId) | unique" f1db-races-race-results.json);
 constructor_ids=$(jq "[.[] | select(.year==$year_GP)] | map(.constructorId) | unique" f1db-races-race-results.json);
-GP_ids=$(jq ".[] | select(.year==$year_GP) | .id" f1db-races.json);
 
 echo "[]" > drivers.json;
 echo "[]" > constructors.json;
@@ -34,12 +34,30 @@ echo "$driver_ids" | jq -r '.[]' | while read -r driver_id; do
     pointDriver=$(jq --arg driver_id "$driver_id" --argjson year "$year_GP" '[.[] | select(.driverId==$driver_id and .year==$year)]' f1db-seasons-driver-standings.json);
 
     jq \
-        --slurpfile formatedDrivers drivers.json \
         --argjson driver "$pointDriver" \
         'map( if .id == $driver[0].driverId then . + $driver[0] else . end | .wins //= 0)' \
         drivers.json \
         > tmpFile.json && mv tmpFile.json drivers.json;
     jq '. | sort_by(.positionNumber)' drivers.json > tmpFile.json && mv tmpFile.json drivers.json;
+
+    constructorId=$(jq -r \
+        --argjson year "$year_GP" --arg driver_id "$driver_id" \
+        '.[] | select(.year==$year) | select(.driverId==$driver_id) | .constructorId' \
+        f1db-seasons-entrants-drivers.json\
+    );
+    constructorName=$(jq -r \
+      --arg constructorId "$constructorId" \
+      '.[] | select(.id == $constructorId) | .name' \
+      f1db-constructors.json
+    );
+
+    jq \
+        --arg driver_id "$driver_id" \
+        --arg constructorId "$constructorId" \
+        --arg constructorName "$constructorName" \
+        'map( if .id==$driver_id then . + { "constructorId": $constructorId, "constructorName": $constructorName } else . end)' \
+        drivers.json \
+        > tmpFile.json && mv tmpFile.json drivers.json;
 done;
 
 
@@ -50,7 +68,6 @@ echo "$constructor_ids" | jq -r '.[]' | while read -r constructor_id; do
     pointConstructor=$(jq --arg constructor_id "$constructor_id" --argjson year "$year_GP" '[.[] | select(.constructorId==$constructor_id and .year==$year)]' f1db-seasons-constructor-standings.json);
 
     jq \
-        --slurpfile formatedConstructors constructors.json \
         --argjson constructor "$pointConstructor" \
         'map( if .id == $constructor[0].constructorId then . + $constructor[0] else . end | .wins //= 0)' \
         constructors.json \
@@ -58,7 +75,7 @@ echo "$constructor_ids" | jq -r '.[]' | while read -r constructor_id; do
     jq '. | sort_by(.positionNumber)' constructors.json > tmpFile.json && mv tmpFile.json constructors.json;
 done;
 
-wins_data=$(jq '[.[] | select(.year==2023) | select(.positionNumber==1)]
+wins_data=$(jq --argjson year "$year_GP" '[.[] | select(.year==$year) | select(.positionNumber==1)]
   | reduce .[] as $item (
       {drivers: {}, constructors: {}};
       $item.driverId as $driverId
