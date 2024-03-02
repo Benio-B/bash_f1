@@ -52,17 +52,17 @@ or
 
 3. Create automation to get fresh data every day
     ```yml
-    alias: Update F1 data every nights
+    alias: Mettre à jour les données de F1 toutes les nuits
     description: ""
     trigger:
-    - platform: time
-      at: "02:00:00"
-      condition: []
-      action:
-      - service: shell_command.update_f1_data
-        data:
-        year: 2023
-        mode: single
+       - platform: time
+         at: "02:00:00"
+    condition: []
+    action:
+       - service: shell_command.update_f1_data
+         data:
+            year: 2023
+    mode: single
     ```
 
 4. Create sensors to use data in lovelace. Rest sensor is used to retrieve all json, fetch twice a day
@@ -89,74 +89,82 @@ or
 ## Data
 ### drivers.json
 > ```json 
-> { 
->   "id": "sergio-perez",
->   "name": "Sergio Pérez",
->   "firstName": "Sergio",
->   "lastName": "Pérez",
->   "fullName": "Sergio Pérez Mendoza",
->   "abbreviation": "PER",
->   "permanentNumber": "11",
->   "gender": "MALE",
->   "dateOfBirth": "1990-01-26",
->   "dateOfDeath": null,
->   "placeOfBirth": "Guadalajara",
->   "countryOfBirthCountryId": "mexico",
->   "nationalityCountryId": "mexico",
->   "secondNationalityCountryId": null,
->   "bestChampionshipPosition": 2,
->   "bestStartingGridPosition": 1,
->   "bestRaceResult": 1,
->   "totalChampionshipWins": 0,
->   "totalRaceEntries": 259,
->   "totalRaceStarts": 257,
->   "totalRaceWins": 6,
->   "totalRaceLaps": 14225,
->   "totalPodiums": 35,
->   "totalPoints": 1486,
->   "totalChampionshipPoints": 1486,
->   "totalPolePositions": 3,
->   "totalFastestLaps": 11,
->   "totalDriverOfTheDay": 14,
->   "totalGrandSlams": 0,
->   "year": 2023,
->   "positionDisplayOrder": 2,
->   "positionNumber": 2,
->   "positionText": "2",
->   "driverId": "sergio-perez",
->   "points": 285,
->   "wins": 2
+> { "data":
+>    { "drivers":
+>       [{ 
+>         "id": "sergio-perez",
+>         "name": "Sergio Pérez",
+>         "firstName": "Sergio",
+>         "lastName": "Pérez",
+>         "fullName": "Sergio Pérez Mendoza",
+>         "abbreviation": "PER",
+>         "permanentNumber": "11",
+>         "gender": "MALE",
+>         "dateOfBirth": "1990-01-26",
+>         "dateOfDeath": null,
+>         "placeOfBirth": "Guadalajara",
+>         "countryOfBirthCountryId": "mexico",
+>         "nationalityCountryId": "mexico",
+>         "secondNationalityCountryId": null,
+>         "bestChampionshipPosition": 2,
+>         "bestStartingGridPosition": 1,
+>         "bestRaceResult": 1,
+>         "totalChampionshipWins": 0,
+>         "totalRaceEntries": 259,
+>         "totalRaceStarts": 257,
+>         "totalRaceWins": 6,
+>         "totalRaceLaps": 14225,
+>         "totalPodiums": 35,
+>         "totalPoints": 1486,
+>         "totalChampionshipPoints": 1486,
+>         "totalPolePositions": 3,
+>         "totalFastestLaps": 11,
+>         "totalDriverOfTheDay": 14,
+>         "totalGrandSlams": 0,
+>         "year": 2023,
+>         "positionDisplayOrder": 2,
+>         "positionNumber": 2,
+>         "positionText": "2",
+>         "driverId": "sergio-perez",
+>         "points": 285,
+>         "wins": 2
+>       }]
+>    }
 > }
 > ```
 
 ### constructors.json
 > ```json
-> {
->   "id": "ferrari",
->   "name": "Ferrari",
->   "fullName": "Scuderia Ferrari",
->   "countryId": "italy",
->   "bestChampionshipPosition": 1,
->   "bestStartingGridPosition": 1,
->   "bestRaceResult": 1,
->   "totalChampionshipWins": 16,
->   "totalRaceEntries": 1076,
->   "totalRaceStarts": 1074,
->   "totalRaceWins": 243,
->   "total1And2Finishes": 85,
->   "totalRaceLaps": 121180,
->   "totalPodiums": 807,
->   "totalPodiumRaces": 615,
->   "totalChampionshipPoints": 9625.0,
->   "totalPolePositions": 249,
->   "totalFastestLaps": 261,
->   "year": 2023,
->   "positionDisplayOrder": 3,
->   "positionNumber": 3,
->   "positionText": "3",
->   "constructorId": "ferrari",
->   "engineManufacturerId": "ferrari",
->   "points": 406,
->   "wins": 1
+> { "data":
+>    { "constructors":
+>       [{
+>         "id": "ferrari",
+>         "name": "Ferrari",
+>         "fullName": "Scuderia Ferrari",
+>         "countryId": "italy",
+>         "bestChampionshipPosition": 1,
+>         "bestStartingGridPosition": 1,
+>         "bestRaceResult": 1,
+>         "totalChampionshipWins": 16,
+>         "totalRaceEntries": 1076,
+>         "totalRaceStarts": 1074,
+>         "totalRaceWins": 243,
+>         "total1And2Finishes": 85,
+>         "totalRaceLaps": 121180,
+>         "totalPodiums": 807,
+>         "totalPodiumRaces": 615,
+>         "totalChampionshipPoints": 9625.0,
+>         "totalPolePositions": 249,
+>         "totalFastestLaps": 261,
+>         "year": 2023,
+>         "positionDisplayOrder": 3,
+>         "positionNumber": 3,
+>         "positionText": "3",
+>         "constructorId": "ferrari",
+>         "engineManufacturerId": "ferrari",
+>         "points": 406,
+>         "wins": 1
+>       }]
+>    }
 > }
 > ```
