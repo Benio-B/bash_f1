@@ -28,7 +28,7 @@ echo "[]" > drivers.json;
 echo "[]" > constructors.json;
 
 echo "$driver_ids" | jq -r '.[]' | while read -r driver_id; do
-    driver=$(jq "[.[] | select(.id==\"$driver_id\")]" f1db-drivers.json);
+    driver=$(jq --arg driver_id "$driver_id" '[.[] | select(.id==$driver_id) | { "id": .id, "name": .name, "abbreviation" : .abbreviation}]' f1db-drivers.json);
     jq --argjson driver "$driver" '. += $driver' drivers.json > tmpFile.json && mv tmpFile.json drivers.json
 
     pointDriver=$(jq --arg driver_id "$driver_id" --argjson year "$year_GP" '[.[] | select(.driverId==$driver_id and .year==$year)]' f1db-seasons-driver-standings.json);
