@@ -95,7 +95,6 @@ or
 
 ## Roadmap
 ### Some day
-- Keep actually used version and re-calculate if the version changes
 - Migrate it in a Home Assistant Add-On (with configuration cron and year)
 - Add data about races and seasons
 
