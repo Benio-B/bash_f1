@@ -16,8 +16,8 @@ mkdir "$folder"/raw;
 
 cd "$folder"/raw;
 
-wget -O "$folder"/raw/f1.zip  https://github.com/f1db/f1db/releases/download/$current_version/f1db-json-splitted-$short_version.zip;
-unzip "$folder"/raw/f1.zip
+wget "https://github.com/f1db/f1db/releases/download/$current_version/f1db-json-splitted-$short_version.zip" -O "f1.zip";
+unzip "f1.zip";
 
 (mv **/* .) > /dev/null 2>&1;
 
@@ -97,11 +97,10 @@ jq \
   | map(if $constructors[.constructorId] then .wins = $constructors[.constructorId] else . end)' \
   constructors.json > tmpFile.json && mv tmpFile.json constructors.json;
 
-jq '{ "data": {"drivers": .}}' drivers.json > tmpFile.json && mv tmpFile.json drivers.json;
-jq '{ "data": {"constructors": .}}' constructors.json > tmpFile.json && mv tmpFile.json constructors.json;
+jq --argjson year "$year_GP" --arg version "$current_version" '{ "year": $year, "version": $version, "data": {"drivers": .}}' drivers.json > tmpFile.json && mv tmpFile.json drivers.json;
+jq --argjson year "$year_GP" --arg version "$current_version" '{ "year": $year, "version": $version, "data": {"constructors": .}}' constructors.json > tmpFile.json && mv tmpFile.json constructors.json;
 
 mv drivers.json /config/www/formula1/drivers.json;
 mv constructors.json /config/www/formula1/constructors.json;
 
-(rm "$folder"*.zip) > /dev/null 2>&1;
 (rm -rf "$folder"/raw) > /dev/null 2>&1;
