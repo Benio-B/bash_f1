@@ -95,6 +95,8 @@ or
 
 ## Roadmap
 ### Some day
+- Keep actually used version and re-calculate if the version changes
+- Migrate it in a Home Assistant Add-On (with configuration cron and year)
 - Add data about races and seasons
 
 ## Data
@@ -179,3 +181,9 @@ or
 >    }
 > }
 > ```
+
+### Notes
+**Get circuit PNG**
+
+      https://www.formula1.com/content/dam/fom-website/2018-redesign-assets/Circuit%20maps%2016x9/{CIRCUIT_NAME}_Circuit.png.transform/7col-retina/image.png
+      https://github.com/0507spc/ScriptStore/blob/main/Widgets/F1_New/F1.js
