@@ -5,12 +5,23 @@ apk add wget;
 apk add unzip;
 
 folder="/share/f1";
+savedFolder="/config/www/formula1";
 year_GP="${1:-2024}";
 
 current_version=$(curl -s GET "https://api.github.com/repos/f1db/f1db/tags?per_page=1" | jq -r '.[].name');
 short_version="${current_version:1}";
 
-mkdir /config/www/formula1;
+saved_version=$(jq -r '.version // ""' "$savedFolder"/drivers.json) > /dev/null 2>&1;
+saved_year=$(jq -r '.year // ""' "$savedFolder"/drivers.json) > /dev/null 2>&1;
+
+if [ "$current_version" == "$saved_version" ] && [ "$year_GP" -eq "$saved_year" ]; then
+  echo "Same data already used";
+  exit;
+fi
+
+echo "Data is not same. Refresh it";
+
+mkdir "$savedFolder";
 mkdir "$folder";
 mkdir "$folder"/raw;
 
@@ -100,7 +111,7 @@ jq \
 jq --argjson year "$year_GP" --arg version "$current_version" '{ "year": $year, "version": $version, "data": {"drivers": .}}' drivers.json > tmpFile.json && mv tmpFile.json drivers.json;
 jq --argjson year "$year_GP" --arg version "$current_version" '{ "year": $year, "version": $version, "data": {"constructors": .}}' constructors.json > tmpFile.json && mv tmpFile.json constructors.json;
 
-mv drivers.json /config/www/formula1/drivers.json;
-mv constructors.json /config/www/formula1/constructors.json;
+mv drivers.json "$savedFolder"/drivers.json;
+mv constructors.json "$savedFolder"/constructors.json;
 
 (rm -rf "$folder"/raw) > /dev/null 2>&1;
