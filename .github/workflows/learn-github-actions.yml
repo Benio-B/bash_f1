@@ -1,0 +1,38 @@
+name: GitHub Actions Demo
+run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+on: 
+  schedule:
+    - cron:  '0 */12 * * *'
+  push:
+jobs:
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
+      - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
+      - run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
+      - name: Check out repository code
+        uses: actions/checkout@v4
+      - run: echo "💡 The ${{ github.repository }} repository has been cloned to the runner."
+      - run: echo "🖥️ The workflow is now ready to test your code on the runner."
+      - run: echo "The github actor ${{ github.actor }}"
+
+      - name: Run Script to update F1 data
+        run: bash getF1Data.sh
+
+      - name: Check for modified files
+        id: git-check
+        run: echo "modified=$(if [ -n "$(git status --porcelain)" ]; then echo "true"; else echo "false"; fi)" >> "$GITHUB_OUTPUT"
+
+      - name: Commit files if there are some changes
+        if: steps.git-check.outputs.modified == 'true'
+        run: |
+          git config --local user.name  ${{ github.actor }}        
+          git config --local user.email "${{ github.actor }}@users.noreply.github.com"
+          git add .
+          git commit -m "Updating automatic repository"
+      - name: Push changes  # push the output folder to your repo
+        if: steps.git-check.outputs.modified == 'true'
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
