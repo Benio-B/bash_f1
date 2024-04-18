@@ -11,6 +11,12 @@ nextGPCity=$(jq -r --argjson nextGP "$nextGP" '$nextGP.circuitId as $id | .[] | 
 nextGPFlagUrl="https://flagcdn.com/w320/${nextGPAlphaCode,,}.png"
 nextGPFlagV2Url="https://flagsapi.com/${nextGPAlphaCode}/shiny/64.png"
 
+flagEmoji=""
+for (( i=0; i<${#nextGPAlphaCode}; i++ )); do
+  char="${nextGPAlphaCode:$i:1}"
+  flagEmoji+="$(echo -e "\U$(printf "%04x" $((127397 + $(printf "%d" "'$char"))))")"
+done
+
 jq -n "$nextGP" | jq\
   --argjson nextGP "$nextGP" \
   --arg nextGPShortName "$nextGPShortName" \
@@ -19,8 +25,9 @@ jq -n "$nextGP" | jq\
   --arg nextGPAlphaCode "$nextGPAlphaCode" \
   --arg nextGPFlagUrl "$nextGPFlagUrl" \
   --arg nextGPFlagV2Url "$nextGPFlagV2Url" \
+  --arg flagEmoji "$flagEmoji" \
   --arg nextGPCity "$nextGPCity" \
-  '{ "name": $nextGPShortName, "country": $nextGPCountry, "alphaCode": $nextGPAlphaCode, "iconUrl": $nextGPFlagUrl, "iconV2Url": $nextGPFlagV2Url, "city": $nextGPCity, "round": .round, "type": .circuitType, date, time, qualifyingDate, qualifyingTime, sprintRaceDate, sprintRaceTime, laps, courseLength, distance }' > nextGP.json
+  '{ "name": $nextGPShortName, "country": $nextGPCountry, "flagEmoji": $flagEmoji, "alphaCode": $nextGPAlphaCode, "iconUrl": $nextGPFlagUrl, "iconV2Url": $nextGPFlagV2Url, "city": $nextGPCity, "round": .round, "type": .circuitType, date, time, qualifyingDate, qualifyingTime, sprintRaceDate, sprintRaceTime, laps, courseLength, distance }' > nextGP.json
 
 # Fastest Lap
 allRacesFromGP=$(jq -r --argjson nextGP "$nextGP" '$nextGP.circuitId as $id | [.[] | select(.circuitId==$id)]' f1db-races.json);
