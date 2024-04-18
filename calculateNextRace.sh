@@ -8,7 +8,8 @@ nextGPCircuit=$(jq --argjson nextGP "$nextGP" '$nextGP.circuitId as $id | .[] | 
 nextGPCountry=$(jq -r --argjson nextGPCircuit "$nextGPCircuit" '$nextGPCircuit.countryId as $id | .[] | select(.id==$id) | .name' f1db-countries.json)
 nextGPAlphaCode=$(jq -r --argjson nextGPCircuit "$nextGPCircuit" '$nextGPCircuit.countryId as $id | .[] | select(.id==$id) | .alpha2Code' f1db-countries.json)
 nextGPCity=$(jq -r --argjson nextGP "$nextGP" '$nextGP.circuitId as $id | .[] | select(.id==$id) | .placeName' f1db-circuits.json)
-nextGPIcon="https://flagcdn.com/w320/${nextGPAlphaCode,,}.png"
+nextGPFlagUrl="https://flagcdn.com/w320/${nextGPAlphaCode,,}.png"
+nextGPFlagV2Url="https://flagsapi.com/${nextGPAlphaCode}/shiny/64.png"
 
 jq -n "$nextGP" | jq\
   --argjson nextGP "$nextGP" \
@@ -16,9 +17,10 @@ jq -n "$nextGP" | jq\
   --argjson nextGPCircuit "$nextGPCircuit" \
   --arg nextGPCountry "$nextGPCountry" \
   --arg nextGPAlphaCode "$nextGPAlphaCode" \
-  --arg nextGPIcon "$nextGPIcon" \
+  --arg nextGPFlagUrl "$nextGPFlagUrl" \
+  --arg nextGPFlagV2Url "$nextGPFlagV2Url" \
   --arg nextGPCity "$nextGPCity" \
-  '{ "name": $nextGPShortName, "country": $nextGPCountry, "alphaCode": $nextGPAlphaCode, "icon": $nextGPIcon, "city": $nextGPCity, "round": .round, "type": .circuitType, date, time, qualifyingDate, qualifyingTime, sprintRaceDate, sprintRaceTime, laps, courseLength, distance }' > nextGP.json
+  '{ "name": $nextGPShortName, "country": $nextGPCountry, "alphaCode": $nextGPAlphaCode, "iconUrl": $nextGPFlagUrl, "iconV2Url": $nextGPFlagV2Url, "city": $nextGPCity, "round": .round, "type": .circuitType, date, time, qualifyingDate, qualifyingTime, sprintRaceDate, sprintRaceTime, laps, courseLength, distance }' > nextGP.json
 
 # Fastest Lap
 allRacesFromGP=$(jq -r --argjson nextGP "$nextGP" '$nextGP.circuitId as $id | [.[] | select(.circuitId==$id)]' f1db-races.json);
