@@ -5,6 +5,8 @@
     "grandPrix": {
       "name": "Chinese GP",
       "country": "China",
+      "alphaCode": "CN",
+      "icon": "https://flagcdn.com/w320/cn.png",
       "city": "Shanghai",
       "round": 5,
       "type": "RACE",
