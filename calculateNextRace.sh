@@ -6,15 +6,19 @@ nextGP=$(jq --arg current_date "$(date +%F)"  '[.[] | select(.date >= $current_d
 nextGPShortName=$(jq -r --argjson nextGP "$nextGP" '$nextGP.grandPrixId as $id | .[] | select(.id==$id) | .shortName' f1db-grands-prix.json)
 nextGPCircuit=$(jq --argjson nextGP "$nextGP" '$nextGP.circuitId as $id | .[] | select(.id==$id)' f1db-circuits.json)
 nextGPCountry=$(jq -r --argjson nextGPCircuit "$nextGPCircuit" '$nextGPCircuit.countryId as $id | .[] | select(.id==$id) | .name' f1db-countries.json)
+nextGPAlphaCode=$(jq -r --argjson nextGPCircuit "$nextGPCircuit" '$nextGPCircuit.countryId as $id | .[] | select(.id==$id) | .alpha2Code' f1db-countries.json)
 nextGPCity=$(jq -r --argjson nextGP "$nextGP" '$nextGP.circuitId as $id | .[] | select(.id==$id) | .placeName' f1db-circuits.json)
+nextGPIcon="https://flagcdn.com/w320/${nextGPAlphaCode,,}.png"
 
 jq -n "$nextGP" | jq\
   --argjson nextGP "$nextGP" \
   --arg nextGPShortName "$nextGPShortName" \
   --argjson nextGPCircuit "$nextGPCircuit" \
   --arg nextGPCountry "$nextGPCountry" \
+  --arg nextGPAlphaCode "$nextGPAlphaCode" \
+  --arg nextGPIcon "$nextGPIcon" \
   --arg nextGPCity "$nextGPCity" \
-  '{ "name": $nextGPShortName, "country": $nextGPCountry, "city": $nextGPCity, "round": .round, "type": .circuitType, date, time, qualifyingDate, qualifyingTime, sprintRaceDate, sprintRaceTime, laps, courseLength, distance }' > nextGP.json
+  '{ "name": $nextGPShortName, "country": $nextGPCountry, "alphaCode": $nextGPAlphaCode, "icon": $nextGPIcon, "city": $nextGPCity, "round": .round, "type": .circuitType, date, time, qualifyingDate, qualifyingTime, sprintRaceDate, sprintRaceTime, laps, courseLength, distance }' > nextGP.json
 
 # Fastest Lap
 allRacesFromGP=$(jq -r --argjson nextGP "$nextGP" '$nextGP.circuitId as $id | [.[] | select(.circuitId==$id)]' f1db-races.json);
