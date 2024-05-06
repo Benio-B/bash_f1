@@ -1,6 +1,6 @@
 {
   "year": 2024,
-  "version": "v2024.5.0",
+  "version": "v2024.6.0",
   "data": {
     "constructors": [
       {
@@ -12,7 +12,7 @@
         "positionText": "1",
         "constructorId": "red-bull",
         "engineManufacturerId": "honda-rbpt",
-        "points": 195,
+        "points": 239,
         "wins": 4
       },
       {
@@ -24,7 +24,7 @@
         "positionText": "2",
         "constructorId": "ferrari",
         "engineManufacturerId": "ferrari",
-        "points": 151,
+        "points": 187,
         "wins": 1
       },
       {
@@ -36,8 +36,8 @@
         "positionText": "3",
         "constructorId": "mclaren",
         "engineManufacturerId": "mercedes",
-        "points": 96,
-        "wins": 0
+        "points": 124,
+        "wins": 1
       },
       {
         "id": "mercedes",
@@ -48,7 +48,7 @@
         "positionText": "4",
         "constructorId": "mercedes",
         "engineManufacturerId": "mercedes",
-        "points": 52,
+        "points": 64,
         "wins": 0
       },
       {
@@ -60,7 +60,7 @@
         "positionText": "5",
         "constructorId": "aston-martin",
         "engineManufacturerId": "mercedes",
-        "points": 40,
+        "points": 42,
         "wins": 0
       },
       {
@@ -72,7 +72,7 @@
         "positionText": "6",
         "constructorId": "rb",
         "engineManufacturerId": "honda-rbpt",
-        "points": 7,
+        "points": 19,
         "wins": 0
       },
       {
@@ -84,30 +84,30 @@
         "positionText": "7",
         "constructorId": "haas",
         "engineManufacturerId": "ferrari",
-        "points": 5,
-        "wins": 0
-      },
-      {
-        "id": "williams",
-        "name": "Williams",
-        "year": 2024,
-        "positionDisplayOrder": 8,
-        "positionNumber": 8,
-        "positionText": "8",
-        "constructorId": "williams",
-        "engineManufacturerId": "mercedes",
-        "points": 0,
+        "points": 7,
         "wins": 0
       },
       {
         "id": "alpine",
         "name": "Alpine",
         "year": 2024,
+        "positionDisplayOrder": 8,
+        "positionNumber": 8,
+        "positionText": "8",
+        "constructorId": "alpine",
+        "engineManufacturerId": "renault",
+        "points": 1,
+        "wins": 0
+      },
+      {
+        "id": "williams",
+        "name": "Williams",
+        "year": 2024,
         "positionDisplayOrder": 9,
         "positionNumber": 9,
         "positionText": "9",
-        "constructorId": "alpine",
-        "engineManufacturerId": "renault",
+        "constructorId": "williams",
+        "engineManufacturerId": "mercedes",
         "points": 0,
         "wins": 0
       },
