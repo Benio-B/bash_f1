@@ -1,6 +1,6 @@
 {
   "year": 2024,
-  "version": "v2024.6.0",
+  "version": "v2024.7.0",
   "data": {
     "constructors": [
       {
@@ -12,8 +12,8 @@
         "positionText": "1",
         "constructorId": "red-bull",
         "engineManufacturerId": "honda-rbpt",
-        "points": 239,
-        "wins": 4
+        "points": 268,
+        "wins": 5
       },
       {
         "id": "ferrari",
@@ -24,7 +24,7 @@
         "positionText": "2",
         "constructorId": "ferrari",
         "engineManufacturerId": "ferrari",
-        "points": 187,
+        "points": 212,
         "wins": 1
       },
       {
@@ -36,7 +36,7 @@
         "positionText": "3",
         "constructorId": "mclaren",
         "engineManufacturerId": "mercedes",
-        "points": 124,
+        "points": 154,
         "wins": 1
       },
       {
@@ -48,7 +48,7 @@
         "positionText": "4",
         "constructorId": "mercedes",
         "engineManufacturerId": "mercedes",
-        "points": 64,
+        "points": 79,
         "wins": 0
       },
       {
@@ -60,7 +60,7 @@
         "positionText": "5",
         "constructorId": "aston-martin",
         "engineManufacturerId": "mercedes",
-        "points": 42,
+        "points": 44,
         "wins": 0
       },
       {
@@ -72,7 +72,7 @@
         "positionText": "6",
         "constructorId": "rb",
         "engineManufacturerId": "honda-rbpt",
-        "points": 19,
+        "points": 20,
         "wins": 0
       },
       {
