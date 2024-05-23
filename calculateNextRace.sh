@@ -27,7 +27,7 @@ jq -n "$nextGP" | jq\
   --arg nextGPFlagV2Url "$nextGPFlagV2Url" \
   --arg flagEmoji "$flagEmoji" \
   --arg nextGPCity "$nextGPCity" \
-  '{ "name": $nextGPShortName, "country": $nextGPCountry, "flagEmoji": $flagEmoji, "alphaCode": $nextGPAlphaCode, "iconUrl": $nextGPFlagUrl, "iconV2Url": $nextGPFlagV2Url, "city": $nextGPCity, "round": .round, "type": .circuitType, date, time, qualifyingDate, qualifyingTime, sprintRaceDate, sprintRaceTime, laps, courseLength, distance }' > nextGP.json
+  '{ "name": $nextGPShortName, "country": $nextGPCountry, "flagEmoji": $flagEmoji, "alphaCode": $nextGPAlphaCode, "iconUrl": $nextGPFlagUrl, "iconV2Url": $nextGPFlagV2Url, "city": $nextGPCity, "round": .round, "type": .circuitType, date, time, qualifyingDate, qualifyingTime, sprintRaceDate, sprintRaceTime, laps, courseLength, distance, "lattitude": $nextGPCircuit.lattitude, "longitude": $nextGPCircuit.longitude }' > nextGP.json
 
 # Fastest Lap
 allRacesFromGP=$(jq -r --argjson nextGP "$nextGP" '$nextGP.circuitId as $id | [.[] | select(.circuitId==$id)]' f1db-races.json);
