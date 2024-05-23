@@ -21,6 +21,8 @@
       "laps": 78,
       "courseLength": 3.337,
       "distance": 260.286,
+      "lattitude": null,
+      "longitude": 7.420556,
       "fastestLap": {
         "driverId": "lewis-hamilton",
         "constructorId": "mercedes",
