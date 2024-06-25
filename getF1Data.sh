@@ -4,7 +4,8 @@ apt-get install jq;
 apt-get install wget;
 apt-get install unzip;
 
-year_GP="${1:-2024}";
+force_update="${1:-false}";
+year_GP="${2:-2024}";
 
 current_version=$(curl -s GET "https://api.github.com/repos/f1db/f1db/tags?per_page=1" | jq -r '.[].name');
 short_version="${current_version:1}";
@@ -12,7 +13,7 @@ short_version="${current_version:1}";
 saved_version=$(jq -r '.version // ""' ./drivers.json) > /dev/null 2>&1;
 saved_year=$(jq -r '.year // ""' ./drivers.json) > /dev/null 2>&1;
 
-if [ "$current_version" == "$saved_version" ] && [ "$year_GP" -eq "$saved_year" ]; then
+if [ "$current_version" == "$saved_version" ] && [ "$year_GP" -eq "$saved_year" ] && [ "$force_update" == "false" ]; then
   echo "Same data already used";
   exit;
 fi

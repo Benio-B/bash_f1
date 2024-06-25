@@ -1,8 +1,8 @@
 name: GitHub Actions Update Json
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
-on: 
+on:
   schedule:
-    - cron:  '0 */6 * * *'
+    - cron: "0 */6 * * *"
   push:
 jobs:
   Explore-GitHub-Actions:
@@ -27,11 +27,11 @@ jobs:
       - name: Commit files if there are some changes
         if: steps.git-check.outputs.modified == 'true'
         run: |
-          git config --local user.name  ${{ github.actor }}        
+          git config --local user.name  ${{ github.actor }}
           git config --local user.email "${{ github.actor }}@users.noreply.github.com"
           git add .
           git commit -m "Updating automatic repository"
-      - name: Push changes  # push the output folder to your repo
+      - name: Push changes # push the output folder to your repo
         if: steps.git-check.outputs.modified == 'true'
         uses: ad-m/github-push-action@master
         with:
