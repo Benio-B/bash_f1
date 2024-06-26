@@ -3,10 +3,14 @@ run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on:
   schedule:
     - cron: "0 4 * * 1"
+  workflow_dispatch:
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
+      - name: Check out repository code
+        uses: actions/checkout@v4
+
       - name: Run Script to update F1 data
         run: bash getF1Data.sh force_update
 
