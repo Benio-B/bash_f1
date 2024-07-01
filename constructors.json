@@ -1,6 +1,6 @@
 {
   "year": 2024,
-  "version": "v2024.10.0",
+  "version": "v2024.11.0",
   "data": {
     "constructors": [
       {
@@ -12,7 +12,7 @@
         "positionText": "1",
         "constructorId": "red-bull",
         "engineManufacturerId": "honda-rbpt",
-        "points": 330,
+        "points": 355,
         "wins": 7
       },
       {
@@ -24,7 +24,7 @@
         "positionText": "2",
         "constructorId": "ferrari",
         "engineManufacturerId": "ferrari",
-        "points": 270,
+        "points": 291,
         "wins": 2
       },
       {
@@ -36,7 +36,7 @@
         "positionText": "3",
         "constructorId": "mclaren",
         "engineManufacturerId": "mercedes",
-        "points": 237,
+        "points": 268,
         "wins": 1
       },
       {
@@ -48,8 +48,8 @@
         "positionText": "4",
         "constructorId": "mercedes",
         "engineManufacturerId": "mercedes",
-        "points": 151,
-        "wins": 0
+        "points": 196,
+        "wins": 1
       },
       {
         "id": "aston-martin",
@@ -72,31 +72,31 @@
         "positionText": "6",
         "constructorId": "rb",
         "engineManufacturerId": "honda-rbpt",
-        "points": 28,
-        "wins": 0
-      },
-      {
-        "id": "alpine",
-        "name": "Alpine",
-        "year": 2024,
-        "positionDisplayOrder": 7,
-        "positionNumber": 7,
-        "positionText": "7",
-        "constructorId": "alpine",
-        "engineManufacturerId": "renault",
-        "points": 8,
+        "points": 30,
         "wins": 0
       },
       {
         "id": "haas",
         "name": "Haas",
         "year": 2024,
+        "positionDisplayOrder": 7,
+        "positionNumber": 7,
+        "positionText": "7",
+        "constructorId": "haas",
+        "engineManufacturerId": "ferrari",
+        "points": 19,
+        "wins": 0
+      },
+      {
+        "id": "alpine",
+        "name": "Alpine",
+        "year": 2024,
         "positionDisplayOrder": 8,
         "positionNumber": 8,
         "positionText": "8",
-        "constructorId": "haas",
-        "engineManufacturerId": "ferrari",
-        "points": 7,
+        "constructorId": "alpine",
+        "engineManufacturerId": "renault",
+        "points": 9,
         "wins": 0
       },
       {
