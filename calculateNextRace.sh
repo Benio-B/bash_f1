@@ -30,7 +30,7 @@ jq -n "$nextGP" | jq\
   '{ "name": $nextGPShortName, "country": $nextGPCountry, "flagEmoji": $flagEmoji, "alphaCode": $nextGPAlphaCode, "iconUrl": $nextGPFlagUrl, "iconV2Url": $nextGPFlagV2Url, "city": $nextGPCity, "round": .round, "type": .circuitType, date, time, qualifyingDate, qualifyingTime, sprintRaceDate, sprintRaceTime, laps, courseLength, distance, "latitude": $nextGPCircuit.latitude, "longitude": $nextGPCircuit.longitude, "circuitName": $nextGPCircuit.fullName }' > nextGP.json
 
 # Fastest Lap
-allRacesFromGP=$(jq -r --argjson nextGP "$nextGP" '$nextGP.circuitId as $id | [.[] | select(.circuitId==$id)]' f1db-races.json);
+allRacesFromGP=$(jq -r --argjson nextGP "$nextGP" '$nextGP.circuitId as $id | $nextGP.laps as $laps | $nextGP.distance as $distance | [.[] | select(.circuitId==$id and .laps==$laps and .distance==$distance)]' f1db-races.json);
 echo "[]" > fastest_lap.json;
 echo $allRacesFromGP | jq -c '.[]' | while read -r race; do
     raceToAdd=$(jq --argjson race "$race" '[.[] | select(.gap==null and .year==$race.year and .round==$race.round)]' f1db-races-fastest-laps.json);
