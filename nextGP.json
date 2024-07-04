@@ -25,13 +25,13 @@
       "longitude": -1.016944,
       "circuitName": "Silverstone Circuit",
       "fastestLap": {
-        "driverId": "nigel-mansell",
-        "constructorId": "williams",
-        "time": "1:09.832",
-        "year": 1987,
-        "driverName": "Nigel Mansell",
-        "driverAbbreviation": "MAN",
-        "constructorName": "Williams"
+        "driverId": "max-verstappen",
+        "constructorId": "red-bull",
+        "time": "1:27.097",
+        "year": 2020,
+        "driverName": "Max Verstappen",
+        "driverAbbreviation": "VER",
+        "constructorName": "Red Bull"
       },
       "circuitUrl": "https://media.formula1.com/image/upload/f_auto/q_auto/v1677244985/content/dam/fom-website/2018-redesign-assets/Circuit%20maps%2016x9/Great_Britain_Circuit.png.transform/7col-retina/image.png"
     }
