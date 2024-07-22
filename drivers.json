@@ -1,6 +1,6 @@
 {
   "year": 2024,
-  "version": "v2024.12.0",
+  "version": "v2024.13.0",
   "data": {
     "drivers": [
       {
@@ -12,7 +12,7 @@
         "positionNumber": 1,
         "positionText": "1",
         "driverId": "max-verstappen",
-        "points": 255,
+        "points": 265,
         "wins": 7,
         "constructorId": "red-bull",
         "constructorName": "Red Bull"
@@ -26,7 +26,7 @@
         "positionNumber": 2,
         "positionText": "2",
         "driverId": "lando-norris",
-        "points": 171,
+        "points": 189,
         "wins": 1,
         "constructorId": "mclaren",
         "constructorName": "McLaren"
@@ -40,7 +40,7 @@
         "positionNumber": 3,
         "positionText": "3",
         "driverId": "charles-leclerc",
-        "points": 150,
+        "points": 162,
         "wins": 1,
         "constructorId": "ferrari",
         "constructorName": "Ferrari"
@@ -54,7 +54,7 @@
         "positionNumber": 4,
         "positionText": "4",
         "driverId": "carlos-sainz-jr",
-        "points": 146,
+        "points": 154,
         "wins": 1,
         "constructorId": "ferrari",
         "constructorName": "Ferrari"
@@ -68,21 +68,35 @@
         "positionNumber": 5,
         "positionText": "5",
         "driverId": "oscar-piastri",
-        "points": 124,
-        "wins": 0,
+        "points": 149,
+        "wins": 1,
         "constructorId": "mclaren",
         "constructorName": "McLaren"
+      },
+      {
+        "id": "lewis-hamilton",
+        "name": "Lewis Hamilton",
+        "abbreviation": "HAM",
+        "year": 2024,
+        "positionDisplayOrder": 6,
+        "positionNumber": 6,
+        "positionText": "6",
+        "driverId": "lewis-hamilton",
+        "points": 125,
+        "wins": 1,
+        "constructorId": "mercedes",
+        "constructorName": "Mercedes"
       },
       {
         "id": "sergio-perez",
         "name": "Sergio Pérez",
         "abbreviation": "PER",
         "year": 2024,
-        "positionDisplayOrder": 6,
-        "positionNumber": 6,
-        "positionText": "6",
+        "positionDisplayOrder": 7,
+        "positionNumber": 7,
+        "positionText": "7",
         "driverId": "sergio-perez",
-        "points": 118,
+        "points": 124,
         "wins": 0,
         "constructorId": "red-bull",
         "constructorName": "Red Bull"
@@ -92,25 +106,11 @@
         "name": "George Russell",
         "abbreviation": "RUS",
         "year": 2024,
-        "positionDisplayOrder": 7,
-        "positionNumber": 7,
-        "positionText": "7",
-        "driverId": "george-russell",
-        "points": 111,
-        "wins": 1,
-        "constructorId": "mercedes",
-        "constructorName": "Mercedes"
-      },
-      {
-        "id": "lewis-hamilton",
-        "name": "Lewis Hamilton",
-        "abbreviation": "HAM",
-        "year": 2024,
         "positionDisplayOrder": 8,
         "positionNumber": 8,
         "positionText": "8",
-        "driverId": "lewis-hamilton",
-        "points": 110,
+        "driverId": "george-russell",
+        "points": 116,
         "wins": 1,
         "constructorId": "mercedes",
         "constructorName": "Mercedes"
@@ -138,7 +138,7 @@
         "positionNumber": 10,
         "positionText": "10",
         "driverId": "lance-stroll",
-        "points": 23,
+        "points": 24,
         "wins": 0,
         "constructorId": "aston-martin",
         "constructorName": "Aston Martin"
@@ -166,7 +166,7 @@
         "positionNumber": 12,
         "positionText": "12",
         "driverId": "yuki-tsunoda",
-        "points": 20,
+        "points": 22,
         "wins": 0,
         "constructorId": "rb",
         "constructorName": "RB"
