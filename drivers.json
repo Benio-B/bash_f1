@@ -1,6 +1,6 @@
 {
   "year": 2024,
-  "version": "v2024.13.0",
+  "version": "v2024.14.0",
   "data": {
     "drivers": [
       {
@@ -12,7 +12,7 @@
         "positionNumber": 1,
         "positionText": "1",
         "driverId": "max-verstappen",
-        "points": 265,
+        "points": 277,
         "wins": 7,
         "constructorId": "red-bull",
         "constructorName": "Red Bull"
@@ -26,7 +26,7 @@
         "positionNumber": 2,
         "positionText": "2",
         "driverId": "lando-norris",
-        "points": 189,
+        "points": 199,
         "wins": 1,
         "constructorId": "mclaren",
         "constructorName": "McLaren"
@@ -40,21 +40,7 @@
         "positionNumber": 3,
         "positionText": "3",
         "driverId": "charles-leclerc",
-        "points": 162,
-        "wins": 1,
-        "constructorId": "ferrari",
-        "constructorName": "Ferrari"
-      },
-      {
-        "id": "carlos-sainz-jr",
-        "name": "Carlos Sainz Jr.",
-        "abbreviation": "SAI",
-        "year": 2024,
-        "positionDisplayOrder": 4,
-        "positionNumber": 4,
-        "positionText": "4",
-        "driverId": "carlos-sainz-jr",
-        "points": 154,
+        "points": 177,
         "wins": 1,
         "constructorId": "ferrari",
         "constructorName": "Ferrari"
@@ -64,14 +50,28 @@
         "name": "Oscar Piastri",
         "abbreviation": "PIA",
         "year": 2024,
-        "positionDisplayOrder": 5,
-        "positionNumber": 5,
-        "positionText": "5",
+        "positionDisplayOrder": 4,
+        "positionNumber": 4,
+        "positionText": "4",
         "driverId": "oscar-piastri",
-        "points": 149,
+        "points": 167,
         "wins": 1,
         "constructorId": "mclaren",
         "constructorName": "McLaren"
+      },
+      {
+        "id": "carlos-sainz-jr",
+        "name": "Carlos Sainz Jr.",
+        "abbreviation": "SAI",
+        "year": 2024,
+        "positionDisplayOrder": 5,
+        "positionNumber": 5,
+        "positionText": "5",
+        "driverId": "carlos-sainz-jr",
+        "points": 162,
+        "wins": 1,
+        "constructorId": "ferrari",
+        "constructorName": "Ferrari"
       },
       {
         "id": "lewis-hamilton",
@@ -82,8 +82,8 @@
         "positionNumber": 6,
         "positionText": "6",
         "driverId": "lewis-hamilton",
-        "points": 125,
-        "wins": 1,
+        "points": 150,
+        "wins": 2,
         "constructorId": "mercedes",
         "constructorName": "Mercedes"
       },
@@ -96,7 +96,7 @@
         "positionNumber": 7,
         "positionText": "7",
         "driverId": "sergio-perez",
-        "points": 124,
+        "points": 131,
         "wins": 0,
         "constructorId": "red-bull",
         "constructorName": "Red Bull"
@@ -124,7 +124,7 @@
         "positionNumber": 9,
         "positionText": "9",
         "driverId": "fernando-alonso",
-        "points": 45,
+        "points": 49,
         "wins": 0,
         "constructorId": "aston-martin",
         "constructorName": "Aston Martin"
@@ -180,7 +180,7 @@
         "positionNumber": 13,
         "positionText": "13",
         "driverId": "daniel-ricciardo",
-        "points": 11,
+        "points": 12,
         "wins": 0,
         "constructorId": "rb",
         "constructorName": "RB"
@@ -228,32 +228,32 @@
         "constructorName": "Haas"
       },
       {
-        "id": "alexander-albon",
-        "name": "Alexander Albon",
-        "abbreviation": "ALB",
+        "id": "esteban-ocon",
+        "name": "Esteban Ocon",
+        "abbreviation": "OCO",
         "year": 2024,
         "positionDisplayOrder": 17,
         "positionNumber": 17,
         "positionText": "17",
+        "driverId": "esteban-ocon",
+        "points": 5,
+        "wins": 0,
+        "constructorId": "alpine",
+        "constructorName": "Alpine"
+      },
+      {
+        "id": "alexander-albon",
+        "name": "Alexander Albon",
+        "abbreviation": "ALB",
+        "year": 2024,
+        "positionDisplayOrder": 18,
+        "positionNumber": 18,
+        "positionText": "18",
         "driverId": "alexander-albon",
         "points": 4,
         "wins": 0,
         "constructorId": "williams",
         "constructorName": "Williams"
-      },
-      {
-        "id": "esteban-ocon",
-        "name": "Esteban Ocon",
-        "abbreviation": "OCO",
-        "year": 2024,
-        "positionDisplayOrder": 18,
-        "positionNumber": 18,
-        "positionText": "18",
-        "driverId": "esteban-ocon",
-        "points": 3,
-        "wins": 0,
-        "constructorId": "alpine",
-        "constructorName": "Alpine"
       },
       {
         "id": "guanyu-zhou",
