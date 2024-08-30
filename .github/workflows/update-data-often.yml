@@ -1,21 +1,21 @@
-name: GitHub Actions Update Json
+name: GitHub Actions Update Json every day
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on:
   schedule:
     - cron: "0 */6 * * *"
   push:
 jobs:
-  Explore-GitHub-Actions:
+  Update-Often:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
-      - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
-      - run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
+      #- run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
+      #- run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
+      #- run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
       - name: Check out repository code
         uses: actions/checkout@v4
-      - run: echo "💡 The ${{ github.repository }} repository has been cloned to the runner."
-      - run: echo "🖥️ The workflow is now ready to test your code on the runner."
-      - run: echo "The github actor ${{ github.actor }}"
+      #- run: echo "💡 The ${{ github.repository }} repository has been cloned to the runner."
+      #- run: echo "🖥️ The workflow is now ready to test your code on the runner."
+      #- run: echo "The github actor ${{ github.actor }}"
 
       - name: Run Script to update F1 data
         run: bash getF1Data.sh
@@ -26,10 +26,16 @@ jobs:
           deleted_files=$(git status --porcelain | grep "^ D" | wc -l)
           modified_files=$(git status --porcelain | grep "^ M" | wc -l)
           added_files=$(git status --porcelain | grep "^A" | wc -l)
+          untracked_files=$(git status --porcelain | grep "^??" | wc -l)
+
+          echo "Deleted files count: $deleted_files";
+          echo "Modified files count: $modified_files"
+          echo "Added files count: $added_files"
+          echo "Untracked files count: $untracked_files"
         
           if [ "$deleted_files" -gt 0 ]; then
             echo "modified=false" >> "$GITHUB_OUTPUT"
-          elif [[ "$modified_files" -gt 0 || "$added_files" -gt 0 ]]; then
+          elif [ "$modified_files" -gt 0 ] || [ "$added_files" -gt 0 ] || [ "$untracked_files" -gt 0 ] ; then
             echo "modified=true" >> "$GITHUB_OUTPUT"
           else
             echo "modified=false" >> "$GITHUB_OUTPUT"
@@ -42,7 +48,8 @@ jobs:
           git config --local user.email "${{ github.actor }}@users.noreply.github.com"
           git add .
           git commit -m "Updating automatic repository"
-      - name: Push changes # push the output folder to your repo
+
+      - name: Push changes
         if: steps.git-check.outputs.modified == 'true'
         uses: ad-m/github-push-action@master
         with:
