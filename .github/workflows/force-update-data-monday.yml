@@ -21,9 +21,9 @@ jobs:
           modified_files=$(git status --porcelain | grep "^ M" | wc -l)
           added_files=$(git status --porcelain | grep "^A" | wc -l)
 
-          echo "deleted_files ${{ deleted_files }}";
-          echo "modified_files ${{ modified_files }}"
-          echo "added_files ${{ added_files }}"
+          echo "deleted_files $deleted_files";
+          echo "modified_files $modified_files"
+          echo "added_files $added_files"
         
           if [ "$deleted_files" -gt 0 ]; then
             echo "modified=false" >> "$GITHUB_OUTPUT"
