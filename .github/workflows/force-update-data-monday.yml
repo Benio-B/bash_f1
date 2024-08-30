@@ -5,7 +5,7 @@ on:
     - cron: "0 4 * * 1"
   workflow_dispatch:
 jobs:
-  Explore-GitHub-Actions:
+  Force-Update:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository code
@@ -17,16 +17,15 @@ jobs:
       - name: Check for modified files
         id: git-check
         run: |
-          ls -l;
           deleted_files=$(git status --porcelain | grep "^ D" | wc -l)
           modified_files=$(git status --porcelain | grep "^ M" | wc -l)
           added_files=$(git status --porcelain | grep "^A" | wc -l)
           untracked_files=$(git status --porcelain | grep "^??" | wc -l)
 
-          echo "deleted_files $deleted_files";
-          echo "modified_files $modified_files"
-          echo "added_files $added_files"
-          echo "untracked_files $untracked_files"
+          echo "Deleted files count: $deleted_files";
+          echo "Modified files count: $modified_files"
+          echo "Added files count: $added_files"
+          echo "Untracked files count: $untracked_files"
         
           if [ "$deleted_files" -gt 0 ]; then
             echo "modified=false" >> "$GITHUB_OUTPUT"
@@ -43,7 +42,7 @@ jobs:
           git config --local user.email "${{ github.actor }}@users.noreply.github.com"
           git add .
           git commit -m "Updating automatic repository"
-      - name: Push changes # push the output folder to your repo
+      - name: Push changes
         if: steps.git-check.outputs.modified == 'true'
         uses: ad-m/github-push-action@master
         with:
