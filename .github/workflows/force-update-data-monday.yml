@@ -17,6 +17,7 @@ jobs:
       - name: Check for modified files
         id: git-check
         run: |
+          ls -l;
           deleted_files=$(git status --porcelain | grep "^ D" | wc -l)
           modified_files=$(git status --porcelain | grep "^ M" | wc -l)
           added_files=$(git status --porcelain | grep "^A" | wc -l)
