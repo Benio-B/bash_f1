@@ -1,5 +1,5 @@
 name: GitHub Actions Update Json On Monday
-run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+run-name: Force update Json 🚀
 on:
   schedule:
     - cron: "0 4 * * 1"
