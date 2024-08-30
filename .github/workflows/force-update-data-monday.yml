@@ -21,14 +21,16 @@ jobs:
           deleted_files=$(git status --porcelain | grep "^ D" | wc -l)
           modified_files=$(git status --porcelain | grep "^ M" | wc -l)
           added_files=$(git status --porcelain | grep "^A" | wc -l)
+          untracked_files=$(git status --porcelain | grep "^??" | wc -l)
 
           echo "deleted_files $deleted_files";
           echo "modified_files $modified_files"
           echo "added_files $added_files"
+          echo "untracked_files $untracked_files"
         
           if [ "$deleted_files" -gt 0 ]; then
             echo "modified=false" >> "$GITHUB_OUTPUT"
-          elif [ "$modified_files" -gt 0 ] || [ "$added_files" -gt 0 ]; then
+          elif [ "$modified_files" -gt 0 ] || [ "$added_files" -gt 0 ] || [ "$untracked_files" -gt 0 ] ; then
             echo "modified=true" >> "$GITHUB_OUTPUT"
           else
             echo "modified=false" >> "$GITHUB_OUTPUT"
