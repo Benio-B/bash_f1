@@ -1,6 +1,6 @@
 {
   "year": 2024,
-  "version": "v2024.17.1",
+  "version": "v2024.18.0",
   "data": {
     "grandPrix": {
       "name": "Singapore GP",
@@ -25,13 +25,13 @@
       "longitude": 103.86385,
       "circuitName": "Marina Bay Street Circuit",
       "fastestLap": {
-        "driverId": "lewis-hamilton",
-        "constructorId": "mercedes",
-        "time": "1:35.867",
-        "year": 2023,
-        "driverName": "Lewis Hamilton",
-        "driverAbbreviation": "HAM",
-        "constructorName": "Mercedes"
+        "driverId": "daniel-ricciardo",
+        "constructorId": "rb",
+        "time": "1:34.486",
+        "year": 2024,
+        "driverName": "Daniel Ricciardo",
+        "driverAbbreviation": "RIC",
+        "constructorName": "RB"
       },
       "circuitUrl": "https://media.formula1.com/image/upload/f_auto/q_auto/v1677244985/content/dam/fom-website/2018-redesign-assets/Circuit%20maps%2016x9/Singapore_Circuit.png.transform/7col-retina/image.png"
     }
