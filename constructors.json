@@ -1,6 +1,6 @@
 {
   "year": 2024,
-  "version": "v2024.19.0",
+  "version": "v2024.20.0",
   "data": {
     "constructors": [
       {
@@ -12,32 +12,32 @@
         "positionText": "1",
         "constructorId": "mclaren",
         "engineManufacturerId": "mercedes",
-        "points": 544,
+        "points": 566,
+        "wins": 5
+      },
+      {
+        "id": "ferrari",
+        "name": "Ferrari",
+        "year": 2024,
+        "positionDisplayOrder": 2,
+        "positionNumber": 2,
+        "positionText": "2",
+        "constructorId": "ferrari",
+        "engineManufacturerId": "ferrari",
+        "points": 537,
         "wins": 5
       },
       {
         "id": "red-bull",
         "name": "Red Bull",
         "year": 2024,
-        "positionDisplayOrder": 2,
-        "positionNumber": 2,
-        "positionText": "2",
-        "constructorId": "red-bull",
-        "engineManufacturerId": "honda-rbpt",
-        "points": 504,
-        "wins": 7
-      },
-      {
-        "id": "ferrari",
-        "name": "Ferrari",
-        "year": 2024,
         "positionDisplayOrder": 3,
         "positionNumber": 3,
         "positionText": "3",
-        "constructorId": "ferrari",
-        "engineManufacturerId": "ferrari",
-        "points": 496,
-        "wins": 4
+        "constructorId": "red-bull",
+        "engineManufacturerId": "honda-rbpt",
+        "points": 512,
+        "wins": 7
       },
       {
         "id": "mercedes",
@@ -48,7 +48,7 @@
         "positionText": "4",
         "constructorId": "mercedes",
         "engineManufacturerId": "mercedes",
-        "points": 344,
+        "points": 366,
         "wins": 3
       },
       {
@@ -72,7 +72,7 @@
         "positionText": "6",
         "constructorId": "haas",
         "engineManufacturerId": "ferrari",
-        "points": 38,
+        "points": 46,
         "wins": 0
       },
       {
@@ -108,7 +108,7 @@
         "positionText": "9",
         "constructorId": "alpine",
         "engineManufacturerId": "renault",
-        "points": 13,
+        "points": 14,
         "wins": 0
       },
       {

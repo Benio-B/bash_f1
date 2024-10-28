@@ -1,6 +1,6 @@
 {
   "year": 2024,
-  "version": "v2024.19.0",
+  "version": "v2024.20.0",
   "data": {
     "drivers": [
       {
@@ -12,7 +12,7 @@
         "positionNumber": 1,
         "positionText": "1",
         "driverId": "max-verstappen",
-        "points": 354,
+        "points": 362,
         "wins": 7,
         "constructorId": "red-bull",
         "constructorName": "Red Bull"
@@ -26,7 +26,7 @@
         "positionNumber": 2,
         "positionText": "2",
         "driverId": "lando-norris",
-        "points": 297,
+        "points": 315,
         "wins": 3,
         "constructorId": "mclaren",
         "constructorName": "McLaren"
@@ -40,7 +40,7 @@
         "positionNumber": 3,
         "positionText": "3",
         "driverId": "charles-leclerc",
-        "points": 275,
+        "points": 291,
         "wins": 3,
         "constructorId": "ferrari",
         "constructorName": "Ferrari"
@@ -54,7 +54,7 @@
         "positionNumber": 4,
         "positionText": "4",
         "driverId": "oscar-piastri",
-        "points": 247,
+        "points": 251,
         "wins": 2,
         "constructorId": "mclaren",
         "constructorName": "McLaren"
@@ -68,8 +68,8 @@
         "positionNumber": 5,
         "positionText": "5",
         "driverId": "carlos-sainz-jr",
-        "points": 215,
-        "wins": 1,
+        "points": 240,
+        "wins": 2,
         "constructorId": "ferrari",
         "constructorName": "Ferrari"
       },
@@ -82,7 +82,7 @@
         "positionNumber": 6,
         "positionText": "6",
         "driverId": "lewis-hamilton",
-        "points": 177,
+        "points": 189,
         "wins": 2,
         "constructorId": "mercedes",
         "constructorName": "Mercedes"
@@ -96,7 +96,7 @@
         "positionNumber": 7,
         "positionText": "7",
         "driverId": "george-russell",
-        "points": 167,
+        "points": 177,
         "wins": 1,
         "constructorId": "mercedes",
         "constructorName": "Mercedes"
@@ -138,7 +138,7 @@
         "positionNumber": 10,
         "positionText": "10",
         "driverId": "nico-hulkenberg",
-        "points": 29,
+        "points": 31,
         "wins": 0,
         "constructorId": "haas",
         "constructorName": "Haas"
@@ -172,13 +172,27 @@
         "constructorName": "RB"
       },
       {
-        "id": "alexander-albon",
-        "name": "Alexander Albon",
-        "abbreviation": "ALB",
+        "id": "kevin-magnussen",
+        "name": "Kevin Magnussen",
+        "abbreviation": "MAG",
         "year": 2024,
         "positionDisplayOrder": 13,
         "positionNumber": 13,
         "positionText": "13",
+        "driverId": "kevin-magnussen",
+        "points": 14,
+        "wins": 0,
+        "constructorId": "haas",
+        "constructorName": "Haas"
+      },
+      {
+        "id": "alexander-albon",
+        "name": "Alexander Albon",
+        "abbreviation": "ALB",
+        "year": 2024,
+        "positionDisplayOrder": 14,
+        "positionNumber": 14,
+        "positionText": "14",
         "driverId": "alexander-albon",
         "points": 12,
         "wins": 0,
@@ -190,28 +204,14 @@
         "name": "Daniel Ricciardo",
         "abbreviation": "RIC",
         "year": 2024,
-        "positionDisplayOrder": 14,
-        "positionNumber": 14,
-        "positionText": "14",
+        "positionDisplayOrder": 15,
+        "positionNumber": 15,
+        "positionText": "15",
         "driverId": "daniel-ricciardo",
         "points": 12,
         "wins": 0,
         "constructorId": "rb",
         "constructorName": "RB"
-      },
-      {
-        "id": "kevin-magnussen",
-        "name": "Kevin Magnussen",
-        "abbreviation": "MAG",
-        "year": 2024,
-        "positionDisplayOrder": 15,
-        "positionNumber": 15,
-        "positionText": "15",
-        "driverId": "kevin-magnussen",
-        "points": 8,
-        "wins": 0,
-        "constructorId": "haas",
-        "constructorName": "Haas"
       },
       {
         "id": "pierre-gasly",
@@ -222,7 +222,7 @@
         "positionNumber": 16,
         "positionText": "16",
         "driverId": "pierre-gasly",
-        "points": 8,
+        "points": 9,
         "wins": 0,
         "constructorId": "alpine",
         "constructorName": "Alpine"
