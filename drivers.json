@@ -1,6 +1,6 @@
 {
   "year": 2024,
-  "version": "v2024.21.0",
+  "version": "v2024.22.0",
   "data": {
     "drivers": [
       {
@@ -12,7 +12,7 @@
         "positionNumber": 1,
         "positionText": "1",
         "driverId": "max-verstappen",
-        "points": 393,
+        "points": 403,
         "wins": 8,
         "constructorId": "red-bull",
         "constructorName": "Red Bull"
@@ -26,7 +26,7 @@
         "positionNumber": 2,
         "positionText": "2",
         "driverId": "lando-norris",
-        "points": 331,
+        "points": 340,
         "wins": 3,
         "constructorId": "mclaren",
         "constructorName": "McLaren"
@@ -40,7 +40,7 @@
         "positionNumber": 3,
         "positionText": "3",
         "driverId": "charles-leclerc",
-        "points": 307,
+        "points": 319,
         "wins": 3,
         "constructorId": "ferrari",
         "constructorName": "Ferrari"
@@ -54,7 +54,7 @@
         "positionNumber": 4,
         "positionText": "4",
         "driverId": "oscar-piastri",
-        "points": 262,
+        "points": 268,
         "wins": 2,
         "constructorId": "mclaren",
         "constructorName": "McLaren"
@@ -68,7 +68,7 @@
         "positionNumber": 5,
         "positionText": "5",
         "driverId": "carlos-sainz-jr",
-        "points": 244,
+        "points": 259,
         "wins": 2,
         "constructorId": "ferrari",
         "constructorName": "Ferrari"
@@ -82,8 +82,8 @@
         "positionNumber": 6,
         "positionText": "6",
         "driverId": "george-russell",
-        "points": 192,
-        "wins": 1,
+        "points": 217,
+        "wins": 2,
         "constructorId": "mercedes",
         "constructorName": "Mercedes"
       },
@@ -96,7 +96,7 @@
         "positionNumber": 7,
         "positionText": "7",
         "driverId": "lewis-hamilton",
-        "points": 190,
+        "points": 208,
         "wins": 2,
         "constructorId": "mercedes",
         "constructorName": "Mercedes"
@@ -110,7 +110,7 @@
         "positionNumber": 8,
         "positionText": "8",
         "driverId": "sergio-perez",
-        "points": 151,
+        "points": 152,
         "wins": 0,
         "constructorId": "red-bull",
         "constructorName": "Red Bull"
@@ -138,7 +138,7 @@
         "positionNumber": 10,
         "positionText": "10",
         "driverId": "nico-hulkenberg",
-        "points": 31,
+        "points": 35,
         "wins": 0,
         "constructorId": "haas",
         "constructorName": "Haas"
@@ -152,7 +152,7 @@
         "positionNumber": 11,
         "positionText": "11",
         "driverId": "yuki-tsunoda",
-        "points": 28,
+        "points": 30,
         "wins": 0,
         "constructorId": "rb",
         "constructorName": "RB"
