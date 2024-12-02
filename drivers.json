@@ -1,6 +1,6 @@
 {
   "year": 2024,
-  "version": "v2024.22.0",
+  "version": "v2024.23.0",
   "data": {
     "drivers": [
       {
@@ -12,8 +12,8 @@
         "positionNumber": 1,
         "positionText": "1",
         "driverId": "max-verstappen",
-        "points": 403,
-        "wins": 8,
+        "points": 429,
+        "wins": 9,
         "constructorId": "red-bull",
         "constructorName": "Red Bull"
       },
@@ -26,7 +26,7 @@
         "positionNumber": 2,
         "positionText": "2",
         "driverId": "lando-norris",
-        "points": 340,
+        "points": 349,
         "wins": 3,
         "constructorId": "mclaren",
         "constructorName": "McLaren"
@@ -40,7 +40,7 @@
         "positionNumber": 3,
         "positionText": "3",
         "driverId": "charles-leclerc",
-        "points": 319,
+        "points": 341,
         "wins": 3,
         "constructorId": "ferrari",
         "constructorName": "Ferrari"
@@ -54,7 +54,7 @@
         "positionNumber": 4,
         "positionText": "4",
         "driverId": "oscar-piastri",
-        "points": 268,
+        "points": 291,
         "wins": 2,
         "constructorId": "mclaren",
         "constructorName": "McLaren"
@@ -68,7 +68,7 @@
         "positionNumber": 5,
         "positionText": "5",
         "driverId": "carlos-sainz-jr",
-        "points": 259,
+        "points": 272,
         "wins": 2,
         "constructorId": "ferrari",
         "constructorName": "Ferrari"
@@ -82,7 +82,7 @@
         "positionNumber": 6,
         "positionText": "6",
         "driverId": "george-russell",
-        "points": 217,
+        "points": 235,
         "wins": 2,
         "constructorId": "mercedes",
         "constructorName": "Mercedes"
@@ -96,7 +96,7 @@
         "positionNumber": 7,
         "positionText": "7",
         "driverId": "lewis-hamilton",
-        "points": 208,
+        "points": 211,
         "wins": 2,
         "constructorId": "mercedes",
         "constructorName": "Mercedes"
@@ -124,7 +124,7 @@
         "positionNumber": 9,
         "positionText": "9",
         "driverId": "fernando-alonso",
-        "points": 62,
+        "points": 68,
         "wins": 0,
         "constructorId": "aston-martin",
         "constructorName": "Aston Martin"
@@ -138,38 +138,38 @@
         "positionNumber": 10,
         "positionText": "10",
         "driverId": "nico-hulkenberg",
-        "points": 35,
+        "points": 37,
         "wins": 0,
         "constructorId": "haas",
         "constructorName": "Haas"
-      },
-      {
-        "id": "yuki-tsunoda",
-        "name": "Yuki Tsunoda",
-        "abbreviation": "TSU",
-        "year": 2024,
-        "positionDisplayOrder": 11,
-        "positionNumber": 11,
-        "positionText": "11",
-        "driverId": "yuki-tsunoda",
-        "points": 30,
-        "wins": 0,
-        "constructorId": "rb",
-        "constructorName": "RB"
       },
       {
         "id": "pierre-gasly",
         "name": "Pierre Gasly",
         "abbreviation": "GAS",
         "year": 2024,
-        "positionDisplayOrder": 12,
-        "positionNumber": 12,
-        "positionText": "12",
+        "positionDisplayOrder": 11,
+        "positionNumber": 11,
+        "positionText": "11",
         "driverId": "pierre-gasly",
-        "points": 26,
+        "points": 36,
         "wins": 0,
         "constructorId": "alpine",
         "constructorName": "Alpine"
+      },
+      {
+        "id": "yuki-tsunoda",
+        "name": "Yuki Tsunoda",
+        "abbreviation": "TSU",
+        "year": 2024,
+        "positionDisplayOrder": 12,
+        "positionNumber": 12,
+        "positionText": "12",
+        "driverId": "yuki-tsunoda",
+        "points": 30,
+        "wins": 0,
+        "constructorId": "rb",
+        "constructorName": "RB"
       },
       {
         "id": "lance-stroll",
@@ -208,7 +208,7 @@
         "positionNumber": 15,
         "positionText": "15",
         "driverId": "kevin-magnussen",
-        "points": 14,
+        "points": 16,
         "wins": 0,
         "constructorId": "haas",
         "constructorName": "Haas"
@@ -270,13 +270,27 @@
         "constructorName": "Williams"
       },
       {
-        "id": "liam-lawson",
-        "name": "Liam Lawson",
-        "abbreviation": "LAW",
+        "id": "guanyu-zhou",
+        "name": "Guanyu Zhou",
+        "abbreviation": "ZHO",
         "year": 2024,
         "positionDisplayOrder": 20,
         "positionNumber": 20,
         "positionText": "20",
+        "driverId": "guanyu-zhou",
+        "points": 4,
+        "wins": 0,
+        "constructorId": "kick-sauber",
+        "constructorName": "Kick Sauber"
+      },
+      {
+        "id": "liam-lawson",
+        "name": "Liam Lawson",
+        "abbreviation": "LAW",
+        "year": 2024,
+        "positionDisplayOrder": 21,
+        "positionNumber": 21,
+        "positionText": "21",
         "driverId": "liam-lawson",
         "points": 4,
         "wins": 0,
@@ -284,14 +298,14 @@
         "constructorName": "RB"
       },
       {
-        "id": "guanyu-zhou",
-        "name": "Guanyu Zhou",
-        "abbreviation": "ZHO",
+        "id": "valtteri-bottas",
+        "name": "Valtteri Bottas",
+        "abbreviation": "BOT",
         "year": 2024,
-        "positionDisplayOrder": 21,
-        "positionNumber": 21,
-        "positionText": "21",
-        "driverId": "guanyu-zhou",
+        "positionDisplayOrder": 22,
+        "positionNumber": 22,
+        "positionText": "22",
+        "driverId": "valtteri-bottas",
         "points": 0,
         "wins": 0,
         "constructorId": "kick-sauber",
@@ -302,28 +316,14 @@
         "name": "Logan Sargeant",
         "abbreviation": "SAR",
         "year": 2024,
-        "positionDisplayOrder": 22,
-        "positionNumber": 22,
-        "positionText": "22",
+        "positionDisplayOrder": 23,
+        "positionNumber": 23,
+        "positionText": "23",
         "driverId": "logan-sargeant",
         "points": 0,
         "wins": 0,
         "constructorId": "williams",
         "constructorName": "Williams"
-      },
-      {
-        "id": "valtteri-bottas",
-        "name": "Valtteri Bottas",
-        "abbreviation": "BOT",
-        "year": 2024,
-        "positionDisplayOrder": 23,
-        "positionNumber": 23,
-        "positionText": "23",
-        "driverId": "valtteri-bottas",
-        "points": 0,
-        "wins": 0,
-        "constructorId": "kick-sauber",
-        "constructorName": "Kick Sauber"
       }
     ]
   }
