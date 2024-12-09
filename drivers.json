@@ -1,6 +1,6 @@
 {
   "year": 2024,
-  "version": "v2024.23.0",
+  "version": "v2024.24.2",
   "data": {
     "drivers": [
       {
@@ -12,7 +12,7 @@
         "positionNumber": 1,
         "positionText": "1",
         "driverId": "max-verstappen",
-        "points": 429,
+        "points": 437,
         "wins": 9,
         "constructorId": "red-bull",
         "constructorName": "Red Bull"
@@ -26,8 +26,8 @@
         "positionNumber": 2,
         "positionText": "2",
         "driverId": "lando-norris",
-        "points": 349,
-        "wins": 3,
+        "points": 374,
+        "wins": 4,
         "constructorId": "mclaren",
         "constructorName": "McLaren"
       },
@@ -40,7 +40,7 @@
         "positionNumber": 3,
         "positionText": "3",
         "driverId": "charles-leclerc",
-        "points": 341,
+        "points": 356,
         "wins": 3,
         "constructorId": "ferrari",
         "constructorName": "Ferrari"
@@ -54,7 +54,7 @@
         "positionNumber": 4,
         "positionText": "4",
         "driverId": "oscar-piastri",
-        "points": 291,
+        "points": 292,
         "wins": 2,
         "constructorId": "mclaren",
         "constructorName": "McLaren"
@@ -68,7 +68,7 @@
         "positionNumber": 5,
         "positionText": "5",
         "driverId": "carlos-sainz-jr",
-        "points": 272,
+        "points": 290,
         "wins": 2,
         "constructorId": "ferrari",
         "constructorName": "Ferrari"
@@ -82,7 +82,7 @@
         "positionNumber": 6,
         "positionText": "6",
         "driverId": "george-russell",
-        "points": 235,
+        "points": 245,
         "wins": 2,
         "constructorId": "mercedes",
         "constructorName": "Mercedes"
@@ -96,7 +96,7 @@
         "positionNumber": 7,
         "positionText": "7",
         "driverId": "lewis-hamilton",
-        "points": 211,
+        "points": 223,
         "wins": 2,
         "constructorId": "mercedes",
         "constructorName": "Mercedes"
@@ -124,38 +124,38 @@
         "positionNumber": 9,
         "positionText": "9",
         "driverId": "fernando-alonso",
-        "points": 68,
+        "points": 70,
         "wins": 0,
         "constructorId": "aston-martin",
         "constructorName": "Aston Martin"
-      },
-      {
-        "id": "nico-hulkenberg",
-        "name": "Nico Hülkenberg",
-        "abbreviation": "HUL",
-        "year": 2024,
-        "positionDisplayOrder": 10,
-        "positionNumber": 10,
-        "positionText": "10",
-        "driverId": "nico-hulkenberg",
-        "points": 37,
-        "wins": 0,
-        "constructorId": "haas",
-        "constructorName": "Haas"
       },
       {
         "id": "pierre-gasly",
         "name": "Pierre Gasly",
         "abbreviation": "GAS",
         "year": 2024,
-        "positionDisplayOrder": 11,
-        "positionNumber": 11,
-        "positionText": "11",
+        "positionDisplayOrder": 10,
+        "positionNumber": 10,
+        "positionText": "10",
         "driverId": "pierre-gasly",
-        "points": 36,
+        "points": 42,
         "wins": 0,
         "constructorId": "alpine",
         "constructorName": "Alpine"
+      },
+      {
+        "id": "nico-hulkenberg",
+        "name": "Nico Hülkenberg",
+        "abbreviation": "HUL",
+        "year": 2024,
+        "positionDisplayOrder": 11,
+        "positionNumber": 11,
+        "positionText": "11",
+        "driverId": "nico-hulkenberg",
+        "points": 41,
+        "wins": 0,
+        "constructorId": "haas",
+        "constructorName": "Haas"
       },
       {
         "id": "yuki-tsunoda",
@@ -324,6 +324,20 @@
         "wins": 0,
         "constructorId": "williams",
         "constructorName": "Williams"
+      },
+      {
+        "id": "jack-doohan",
+        "name": "Jack Doohan",
+        "abbreviation": "DOO",
+        "year": 2024,
+        "positionDisplayOrder": 24,
+        "positionNumber": 24,
+        "positionText": "24",
+        "driverId": "jack-doohan",
+        "points": 0,
+        "wins": 0,
+        "constructorId": "alpine",
+        "constructorName": "Alpine"
       }
     ]
   }

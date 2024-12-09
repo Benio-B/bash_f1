@@ -1,6 +1,6 @@
 {
   "year": 2024,
-  "version": "v2024.23.0",
+  "version": "v2024.24.2",
   "data": {
     "constructors": [
       {
@@ -12,8 +12,8 @@
         "positionText": "1",
         "constructorId": "mclaren",
         "engineManufacturerId": "mercedes",
-        "points": 640,
-        "wins": 5
+        "points": 666,
+        "wins": 6
       },
       {
         "id": "ferrari",
@@ -24,7 +24,7 @@
         "positionText": "2",
         "constructorId": "ferrari",
         "engineManufacturerId": "ferrari",
-        "points": 619,
+        "points": 652,
         "wins": 5
       },
       {
@@ -36,7 +36,7 @@
         "positionText": "3",
         "constructorId": "red-bull",
         "engineManufacturerId": "honda-rbpt",
-        "points": 581,
+        "points": 589,
         "wins": 9
       },
       {
@@ -48,7 +48,7 @@
         "positionText": "4",
         "constructorId": "mercedes",
         "engineManufacturerId": "mercedes",
-        "points": 446,
+        "points": 468,
         "wins": 4
       },
       {
@@ -60,7 +60,7 @@
         "positionText": "5",
         "constructorId": "aston-martin",
         "engineManufacturerId": "mercedes",
-        "points": 92,
+        "points": 94,
         "wins": 0
       },
       {
@@ -72,7 +72,7 @@
         "positionText": "6",
         "constructorId": "alpine",
         "engineManufacturerId": "renault",
-        "points": 59,
+        "points": 65,
         "wins": 0
       },
       {
@@ -84,7 +84,7 @@
         "positionText": "7",
         "constructorId": "haas",
         "engineManufacturerId": "ferrari",
-        "points": 54,
+        "points": 58,
         "wins": 0
       },
       {
