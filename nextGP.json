@@ -1,6 +1,6 @@
 {
   "year": 2025,
-  "version": "v2025.0.3",
+  "version": "v2025.0.4",
   "data": {
     "grandPrix": {
       "name": "Australian GP",
@@ -13,9 +13,9 @@
       "round": 1,
       "type": "STREET",
       "date": "2025-03-16",
-      "time": null,
-      "qualifyingDate": null,
-      "qualifyingTime": null,
+      "time": "04:00",
+      "qualifyingDate": "2025-03-15",
+      "qualifyingTime": "05:00",
       "sprintRaceDate": null,
       "sprintRaceTime": null,
       "laps": 58,
