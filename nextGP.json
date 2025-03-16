@@ -1,6 +1,6 @@
 {
   "year": 2025,
-  "version": "v2025.0.5",
+  "version": "v2025.1.0",
   "data": {
     "grandPrix": {
       "name": "Australian GP",
@@ -18,21 +18,12 @@
       "qualifyingTime": "05:00",
       "sprintRaceDate": null,
       "sprintRaceTime": null,
-      "laps": 58,
+      "laps": 57,
       "courseLength": 5.278,
-      "distance": 306.124,
+      "distance": 300.846,
       "latitude": -37.849722,
       "longitude": 144.968333,
       "circuitName": "Melbourne Grand Prix Circuit",
-      "fastestLap": {
-        "driverId": "charles-leclerc",
-        "constructorId": "ferrari",
-        "time": "1:19.813",
-        "year": 2024,
-        "driverName": "Charles Leclerc",
-        "driverAbbreviation": "LEC",
-        "constructorName": "Ferrari"
-      },
       "circuitUrl": "https://media.formula1.com/image/upload/f_auto/q_auto/v1677244985/content/dam/fom-website/2018-redesign-assets/Circuit%20maps%2016x9/Australia_Circuit.png.transform/7col-retina/image.png"
     }
   }
