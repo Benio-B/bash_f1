@@ -1,6 +1,6 @@
 #!/bin/bash
 
-year_GP="${1:-2024}";
+year_GP="${1:-2025}";
 
 echo "[]" > drivers.json;
 
@@ -14,7 +14,7 @@ echo "$driver_ids" | jq -r '.[]' | while read -r driver_id; do
 
     jq \
         --argjson driver "$pointDriver" \
-        'map( if .id == $driver[0].driverId then . + $driver[0] else . end | .wins //= 0)' \
+        'map( if .id == $driver[0].driverId then .points = (.points // 0) + $driver[0].points | .positionNumber = $driver[0].positionNumber else . end | .wins //= 0 | .points //=0 | .driverId=.id | .positionNumber //=20)' \
         drivers.json \
         > tmpFile.json && mv tmpFile.json drivers.json;
     jq '. | sort_by(.positionNumber)' drivers.json > tmpFile.json && mv tmpFile.json drivers.json;

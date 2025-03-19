@@ -8,7 +8,6 @@ force_update="${1:-false}";
 year_GP="${2:-2025}";
 
 current_version=$(curl -s GET "https://api.github.com/repos/f1db/f1db/tags?per_page=1" | jq -r '.[].name');
-short_version="${current_version:1}";
 
 saved_version=$(jq -r '.version // ""' ./drivers.json) > /dev/null 2>&1;
 saved_year=$(jq -r '.year // ""' ./drivers.json) > /dev/null 2>&1;

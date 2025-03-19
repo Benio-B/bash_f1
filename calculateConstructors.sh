@@ -1,6 +1,6 @@
 #!/bin/bash
 
-year_GP="${1:-2024}";
+year_GP="${1:-2025}";
 
 echo "[]" > constructors.json;
 

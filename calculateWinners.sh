@@ -1,6 +1,6 @@
 #!/bin/bash
 
-year_GP="${1:-2024}";
+year_GP="${1:-2025}";
 
 wins_data=$(jq --argjson year "$year_GP" '[.[] | select(.year==$year) | select(.positionNumber==1)]
   | reduce .[] as $item (

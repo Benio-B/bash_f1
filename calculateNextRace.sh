@@ -1,6 +1,6 @@
 #!/bin/bash
 
-year_GP="${1:-2024}";
+year_GP="${1:-2025}";
 
 nextGP=$(jq --arg current_date "$(date +%F)"  '[.[] | select(.date >= $current_date)] | .[0]' f1db-races.json)
 nextGPShortName=$(jq -r --argjson nextGP "$nextGP" '$nextGP.grandPrixId as $id | .[] | select(.id==$id) | .shortName' f1db-grands-prix.json)
