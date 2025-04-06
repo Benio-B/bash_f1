@@ -1,6 +1,6 @@
 {
   "year": 2025,
-  "version": "v2025.2.1",
+  "version": "v2025.3.0",
   "data": {
     "grandPrix": {
       "name": "Japanese GP",
@@ -25,13 +25,13 @@
       "longitude": 136.540556,
       "circuitName": "Suzuka Circuit",
       "fastestLap": {
-        "driverId": "sebastian-vettel",
-        "constructorId": "ferrari",
-        "time": "1:32.318",
-        "year": 2018,
-        "driverName": "Sebastian Vettel",
-        "driverAbbreviation": "VET",
-        "constructorName": "Ferrari"
+        "driverId": "andrea-kimi-antonelli",
+        "constructorId": "mercedes",
+        "time": "1:30.965",
+        "year": 2025,
+        "driverName": "Andrea Kimi Antonelli",
+        "driverAbbreviation": "ANT",
+        "constructorName": "Mercedes"
       },
       "circuitUrl": "https://media.formula1.com/image/upload/f_auto/q_auto/v1677244985/content/dam/fom-website/2018-redesign-assets/Circuit%20maps%2016x9/Japan_Circuit.png.transform/7col-retina/image.png"
     }
