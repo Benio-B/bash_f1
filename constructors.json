@@ -1,6 +1,6 @@
 {
   "year": 2025,
-  "version": "v2025.4.0",
+  "version": "v2025.5.0",
   "data": {
     "constructors": [
       {
@@ -12,8 +12,8 @@
         "positionText": "1",
         "constructorId": "mclaren",
         "engineManufacturerId": "mercedes",
-        "points": 151,
-        "wins": 3
+        "points": 188,
+        "wins": 4
       },
       {
         "id": "mercedes",
@@ -24,7 +24,7 @@
         "positionText": "2",
         "constructorId": "mercedes",
         "engineManufacturerId": "mercedes",
-        "points": 93,
+        "points": 111,
         "wins": 0
       },
       {
@@ -36,7 +36,7 @@
         "positionText": "3",
         "constructorId": "red-bull",
         "engineManufacturerId": "honda-rbpt",
-        "points": 71,
+        "points": 89,
         "wins": 1
       },
       {
@@ -48,31 +48,31 @@
         "positionText": "4",
         "constructorId": "ferrari",
         "engineManufacturerId": "ferrari",
-        "points": 57,
-        "wins": 0
-      },
-      {
-        "id": "haas",
-        "name": "Haas",
-        "year": 2025,
-        "positionDisplayOrder": 5,
-        "positionNumber": 5,
-        "positionText": "5",
-        "constructorId": "haas",
-        "engineManufacturerId": "ferrari",
-        "points": 20,
+        "points": 78,
         "wins": 0
       },
       {
         "id": "williams",
         "name": "Williams",
         "year": 2025,
+        "positionDisplayOrder": 5,
+        "positionNumber": 5,
+        "positionText": "5",
+        "constructorId": "williams",
+        "engineManufacturerId": "mercedes",
+        "points": 25,
+        "wins": 0
+      },
+      {
+        "id": "haas",
+        "name": "Haas",
+        "year": 2025,
         "positionDisplayOrder": 6,
         "positionNumber": 6,
         "positionText": "6",
-        "constructorId": "williams",
-        "engineManufacturerId": "mercedes",
-        "points": 19,
+        "constructorId": "haas",
+        "engineManufacturerId": "ferrari",
+        "points": 20,
         "wins": 0
       },
       {
@@ -96,7 +96,7 @@
         "positionText": "8",
         "constructorId": "racing-bulls",
         "engineManufacturerId": "honda-rbpt",
-        "points": 7,
+        "points": 8,
         "wins": 0
       },
       {
