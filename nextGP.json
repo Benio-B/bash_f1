@@ -1,6 +1,6 @@
 {
   "year": 2025,
-  "version": "v2025.7.0",
+  "version": "v2025.8.0",
   "data": {
     "grandPrix": {
       "name": "Monaco GP",
@@ -15,7 +15,7 @@
       "date": "2025-05-25",
       "time": "13:00",
       "qualifyingDate": "2025-05-24",
-      "qualifyingTime": "15:00",
+      "qualifyingTime": "14:00",
       "sprintRaceDate": null,
       "sprintRaceTime": null,
       "laps": 78,
