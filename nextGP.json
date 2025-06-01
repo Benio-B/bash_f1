@@ -1,6 +1,6 @@
 {
   "year": 2025,
-  "version": "v2025.8.0",
+  "version": "v2025.9.0",
   "data": {
     "grandPrix": {
       "name": "Spanish GP",
@@ -25,13 +25,13 @@
       "longitude": 2.261111,
       "circuitName": "Circuit de Barcelona-Catalunya",
       "fastestLap": {
-        "driverId": "max-verstappen",
-        "constructorId": "red-bull",
-        "time": "1:16.330",
-        "year": 2023,
-        "driverName": "Max Verstappen",
-        "driverAbbreviation": "VER",
-        "constructorName": "Red Bull"
+        "driverId": "oscar-piastri",
+        "constructorId": "mclaren",
+        "time": "1:15.743",
+        "year": 2025,
+        "driverName": "Oscar Piastri",
+        "driverAbbreviation": "PIA",
+        "constructorName": "McLaren"
       },
       "circuitUrl": "https://media.formula1.com/image/upload/f_auto/q_auto/v1677244985/content/dam/fom-website/2018-redesign-assets/Circuit%20maps%2016x9/Spain_Circuit.png.transform/7col-retina/image.png"
     }
