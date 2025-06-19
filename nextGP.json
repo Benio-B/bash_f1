@@ -1,0 +1,39 @@
+{
+  "year": 2025,
+  "version": "v2025.10.0",
+  "data": {
+    "grandPrix": {
+      "name": "Austrian GP",
+      "country": "Austria",
+      "flagEmoji": "🇦🇹",
+      "alphaCode": "AT",
+      "iconUrl": "https://flagcdn.com/w320/at.png",
+      "iconV2Url": "https://flagsapi.com/AT/shiny/64.png",
+      "city": "Spielberg",
+      "round": 11,
+      "type": "RACE",
+      "date": "2025-06-29",
+      "time": "13:00",
+      "qualifyingDate": "2025-06-28",
+      "qualifyingTime": "14:00",
+      "sprintRaceDate": null,
+      "sprintRaceTime": null,
+      "laps": 71,
+      "courseLength": 4.318,
+      "distance": 306.452,
+      "latitude": 47.219722,
+      "longitude": 14.764722,
+      "circuitName": "Red Bull Ring",
+      "fastestLap": {
+        "driverId": "carlos-sainz-jr",
+        "constructorId": "mclaren",
+        "time": "1:05.619",
+        "year": 2020,
+        "driverName": "Carlos Sainz Jr.",
+        "driverAbbreviation": "SAI",
+        "constructorName": "McLaren"
+      },
+      "circuitUrl": "https://media.formula1.com/image/upload/f_auto/q_auto/v1677244985/content/dam/fom-website/2018-redesign-assets/Circuit%20maps%2016x9/Austria_Circuit.png.transform/7col-retina/image.png"
+    }
+  }
+}
