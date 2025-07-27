@@ -1,6 +1,6 @@
 {
   "year": 2025,
-  "version": "v2025.12.0",
+  "version": "v2025.13.0",
   "data": {
     "constructors": [
       {
@@ -12,8 +12,8 @@
         "positionText": "1",
         "constructorId": "mclaren",
         "engineManufacturerId": "mercedes",
-        "points": 460,
-        "wins": 9
+        "points": 516,
+        "wins": 10
       },
       {
         "id": "ferrari",
@@ -24,7 +24,7 @@
         "positionText": "2",
         "constructorId": "ferrari",
         "engineManufacturerId": "ferrari",
-        "points": 222,
+        "points": 248,
         "wins": 0
       },
       {
@@ -36,7 +36,7 @@
         "positionText": "3",
         "constructorId": "mercedes",
         "engineManufacturerId": "mercedes",
-        "points": 210,
+        "points": 220,
         "wins": 1
       },
       {
@@ -48,7 +48,7 @@
         "positionText": "4",
         "constructorId": "red-bull",
         "engineManufacturerId": "honda-rbpt",
-        "points": 172,
+        "points": 192,
         "wins": 2
       },
       {
@@ -60,7 +60,7 @@
         "positionText": "5",
         "constructorId": "williams",
         "engineManufacturerId": "mercedes",
-        "points": 59,
+        "points": 70,
         "wins": 0
       },
       {
@@ -72,7 +72,7 @@
         "positionText": "6",
         "constructorId": "kick-sauber",
         "engineManufacturerId": "ferrari",
-        "points": 41,
+        "points": 43,
         "wins": 0
       },
       {
@@ -84,7 +84,7 @@
         "positionText": "7",
         "constructorId": "racing-bulls",
         "engineManufacturerId": "honda-rbpt",
-        "points": 36,
+        "points": 41,
         "wins": 0
       },
       {
@@ -108,7 +108,7 @@
         "positionText": "9",
         "constructorId": "haas",
         "engineManufacturerId": "ferrari",
-        "points": 29,
+        "points": 35,
         "wins": 0
       },
       {
@@ -120,7 +120,7 @@
         "positionText": "10",
         "constructorId": "alpine",
         "engineManufacturerId": "renault",
-        "points": 19,
+        "points": 20,
         "wins": 0
       }
     ]
