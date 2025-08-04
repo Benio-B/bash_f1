@@ -1,6 +1,6 @@
 {
   "year": 2025,
-  "version": "v2025.13.0",
+  "version": "v2025.14.0",
   "data": {
     "constructors": [
       {
@@ -12,8 +12,8 @@
         "positionText": "1",
         "constructorId": "mclaren",
         "engineManufacturerId": "mercedes",
-        "points": 516,
-        "wins": 10
+        "points": 559,
+        "wins": 11
       },
       {
         "id": "ferrari",
@@ -24,7 +24,7 @@
         "positionText": "2",
         "constructorId": "ferrari",
         "engineManufacturerId": "ferrari",
-        "points": 248,
+        "points": 260,
         "wins": 0
       },
       {
@@ -36,7 +36,7 @@
         "positionText": "3",
         "constructorId": "mercedes",
         "engineManufacturerId": "mercedes",
-        "points": 220,
+        "points": 236,
         "wins": 1
       },
       {
@@ -48,7 +48,7 @@
         "positionText": "4",
         "constructorId": "red-bull",
         "engineManufacturerId": "honda-rbpt",
-        "points": 192,
+        "points": 194,
         "wins": 2
       },
       {
@@ -64,39 +64,39 @@
         "wins": 0
       },
       {
-        "id": "kick-sauber",
-        "name": "Kick Sauber",
+        "id": "aston-martin",
+        "name": "Aston Martin",
         "year": 2025,
         "positionDisplayOrder": 6,
         "positionNumber": 6,
         "positionText": "6",
+        "constructorId": "aston-martin",
+        "engineManufacturerId": "mercedes",
+        "points": 52,
+        "wins": 0
+      },
+      {
+        "id": "kick-sauber",
+        "name": "Kick Sauber",
+        "year": 2025,
+        "positionDisplayOrder": 7,
+        "positionNumber": 7,
+        "positionText": "7",
         "constructorId": "kick-sauber",
         "engineManufacturerId": "ferrari",
-        "points": 43,
+        "points": 51,
         "wins": 0
       },
       {
         "id": "racing-bulls",
         "name": "Racing Bulls",
         "year": 2025,
-        "positionDisplayOrder": 7,
-        "positionNumber": 7,
-        "positionText": "7",
-        "constructorId": "racing-bulls",
-        "engineManufacturerId": "honda-rbpt",
-        "points": 41,
-        "wins": 0
-      },
-      {
-        "id": "aston-martin",
-        "name": "Aston Martin",
-        "year": 2025,
         "positionDisplayOrder": 8,
         "positionNumber": 8,
         "positionText": "8",
-        "constructorId": "aston-martin",
-        "engineManufacturerId": "mercedes",
-        "points": 36,
+        "constructorId": "racing-bulls",
+        "engineManufacturerId": "honda-rbpt",
+        "points": 45,
         "wins": 0
       },
       {
