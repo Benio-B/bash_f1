@@ -1,6 +1,6 @@
 {
   "year": 2025,
-  "version": "v2025.14.0",
+  "version": "v2025.15.0",
   "data": {
     "grandPrix": {
       "name": "Dutch GP",
@@ -25,13 +25,13 @@
       "longitude": 4.540922,
       "circuitName": "Circuit Park Zandvoort",
       "fastestLap": {
-        "driverId": "max-verstappen",
-        "constructorId": "red-bull",
-        "time": "1:13.652",
-        "year": 2022,
-        "driverName": "Max Verstappen",
-        "driverAbbreviation": "VER",
-        "constructorName": "Red Bull"
+        "driverId": "oscar-piastri",
+        "constructorId": "mclaren",
+        "time": "1:12.271",
+        "year": 2025,
+        "driverName": "Oscar Piastri",
+        "driverAbbreviation": "PIA",
+        "constructorName": "McLaren"
       },
       "circuitUrl": "https://media.formula1.com/image/upload/f_auto/q_auto/v1677244985/content/dam/fom-website/2018-redesign-assets/Circuit%20maps%2016x9/Netherlands_Circuit.png.transform/7col-retina/image.png"
     }
