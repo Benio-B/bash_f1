@@ -1,6 +1,6 @@
 {
   "year": 2025,
-  "version": "v2025.15.1",
+  "version": "v2025.16.0",
   "data": {
     "constructors": [
       {
@@ -12,7 +12,7 @@
         "positionText": "1",
         "constructorId": "mclaren",
         "engineManufacturerId": "mercedes",
-        "points": 584,
+        "points": 617,
         "wins": 12
       },
       {
@@ -24,7 +24,7 @@
         "positionText": "2",
         "constructorId": "ferrari",
         "engineManufacturerId": "ferrari",
-        "points": 260,
+        "points": 280,
         "wins": 0
       },
       {
@@ -36,7 +36,7 @@
         "positionText": "3",
         "constructorId": "mercedes",
         "engineManufacturerId": "mercedes",
-        "points": 248,
+        "points": 260,
         "wins": 1
       },
       {
@@ -48,8 +48,8 @@
         "positionText": "4",
         "constructorId": "red-bull",
         "engineManufacturerId": "honda-rbpt",
-        "points": 214,
-        "wins": 2
+        "points": 239,
+        "wins": 3
       },
       {
         "id": "williams",
@@ -60,7 +60,7 @@
         "positionText": "5",
         "constructorId": "williams",
         "engineManufacturerId": "mercedes",
-        "points": 80,
+        "points": 86,
         "wins": 0
       },
       {
@@ -84,7 +84,7 @@
         "positionText": "7",
         "constructorId": "racing-bulls",
         "engineManufacturerId": "honda-rbpt",
-        "points": 60,
+        "points": 61,
         "wins": 0
       },
       {
@@ -96,7 +96,7 @@
         "positionText": "8",
         "constructorId": "kick-sauber",
         "engineManufacturerId": "ferrari",
-        "points": 51,
+        "points": 55,
         "wins": 0
       },
       {
