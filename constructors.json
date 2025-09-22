@@ -2,6 +2,127 @@
   "year": 2025,
   "version": "v2025.17.1",
   "data": {
-    "constructors": []
+    "constructors": [
+      {
+        "id": "mclaren",
+        "name": "McLaren",
+        "year": 2025,
+        "positionDisplayOrder": 1,
+        "positionNumber": 1,
+        "positionText": "1",
+        "constructorId": "mclaren",
+        "engineManufacturerId": "mercedes",
+        "points": 623,
+        "wins": 12
+      },
+      {
+        "id": "mercedes",
+        "name": "Mercedes",
+        "year": 2025,
+        "positionDisplayOrder": 2,
+        "positionNumber": 2,
+        "positionText": "2",
+        "constructorId": "mercedes",
+        "engineManufacturerId": "mercedes",
+        "points": 290,
+        "wins": 1
+      },
+      {
+        "id": "ferrari",
+        "name": "Ferrari",
+        "year": 2025,
+        "positionDisplayOrder": 3,
+        "positionNumber": 3,
+        "positionText": "3",
+        "constructorId": "ferrari",
+        "engineManufacturerId": "ferrari",
+        "points": 286,
+        "wins": 0
+      },
+      {
+        "id": "red-bull",
+        "name": "Red Bull",
+        "year": 2025,
+        "positionDisplayOrder": 4,
+        "positionNumber": 4,
+        "positionText": "4",
+        "constructorId": "red-bull",
+        "engineManufacturerId": "honda-rbpt",
+        "points": 272,
+        "wins": 4
+      },
+      {
+        "id": "williams",
+        "name": "Williams",
+        "year": 2025,
+        "positionDisplayOrder": 5,
+        "positionNumber": 5,
+        "positionText": "5",
+        "constructorId": "williams",
+        "engineManufacturerId": "mercedes",
+        "points": 101,
+        "wins": 0
+      },
+      {
+        "id": "racing-bulls",
+        "name": "Racing Bulls",
+        "year": 2025,
+        "positionDisplayOrder": 6,
+        "positionNumber": 6,
+        "positionText": "6",
+        "constructorId": "racing-bulls",
+        "engineManufacturerId": "honda-rbpt",
+        "points": 72,
+        "wins": 0
+      },
+      {
+        "id": "aston-martin",
+        "name": "Aston Martin",
+        "year": 2025,
+        "positionDisplayOrder": 7,
+        "positionNumber": 7,
+        "positionText": "7",
+        "constructorId": "aston-martin",
+        "engineManufacturerId": "mercedes",
+        "points": 62,
+        "wins": 0
+      },
+      {
+        "id": "kick-sauber",
+        "name": "Kick Sauber",
+        "year": 2025,
+        "positionDisplayOrder": 8,
+        "positionNumber": 8,
+        "positionText": "8",
+        "constructorId": "kick-sauber",
+        "engineManufacturerId": "ferrari",
+        "points": 55,
+        "wins": 0
+      },
+      {
+        "id": "haas",
+        "name": "Haas",
+        "year": 2025,
+        "positionDisplayOrder": 9,
+        "positionNumber": 9,
+        "positionText": "9",
+        "constructorId": "haas",
+        "engineManufacturerId": "ferrari",
+        "points": 44,
+        "wins": 0
+      },
+      {
+        "id": "alpine",
+        "name": "Alpine",
+        "year": 2025,
+        "positionDisplayOrder": 10,
+        "positionNumber": 10,
+        "positionText": "10",
+        "constructorId": "alpine",
+        "engineManufacturerId": "renault",
+        "points": 20,
+        "wins": 0
+      }
+    ]
   }
 }
