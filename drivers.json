@@ -1,6 +1,6 @@
 {
   "year": 2025,
-  "version": "v2025.18.0",
+  "version": "v2025.18.1",
   "data": {
     "drivers": [
       {
@@ -62,7 +62,7 @@
         "id": "lewis-hamilton",
         "name": "Lewis Hamilton",
         "abbreviation": "HAM",
-        "points": 127,
+        "points": 125,
         "positionNumber": 6,
         "wins": 0,
         "driverId": "lewis-hamilton",
@@ -117,7 +117,7 @@
         "id": "fernando-alonso",
         "name": "Fernando Alonso",
         "abbreviation": "ALO",
-        "points": 34,
+        "points": 36,
         "positionNumber": 11,
         "wins": 0,
         "driverId": "fernando-alonso",

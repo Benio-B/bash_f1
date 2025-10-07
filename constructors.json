@@ -1,6 +1,6 @@
 {
   "year": 2025,
-  "version": "v2025.18.0",
+  "version": "v2025.18.1",
   "data": {
     "constructors": [
       {
@@ -36,7 +36,7 @@
         "positionText": "3",
         "constructorId": "ferrari",
         "engineManufacturerId": "ferrari",
-        "points": 300,
+        "points": 298,
         "wins": 0
       },
       {
@@ -84,7 +84,7 @@
         "positionText": "7",
         "constructorId": "aston-martin",
         "engineManufacturerId": "mercedes",
-        "points": 66,
+        "points": 68,
         "wins": 0
       },
       {
