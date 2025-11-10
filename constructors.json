@@ -1,6 +1,6 @@
 {
   "year": 2025,
-  "version": "v2025.20.0",
+  "version": "v2025.21.0",
   "data": {
     "constructors": [
       {
@@ -12,44 +12,44 @@
         "positionText": "1",
         "constructorId": "mclaren",
         "engineManufacturerId": "mercedes",
-        "points": 713,
-        "wins": 13
-      },
-      {
-        "id": "ferrari",
-        "name": "Ferrari",
-        "year": 2025,
-        "positionDisplayOrder": 2,
-        "positionNumber": 2,
-        "positionText": "2",
-        "constructorId": "ferrari",
-        "engineManufacturerId": "ferrari",
-        "points": 356,
-        "wins": 0
+        "points": 756,
+        "wins": 14
       },
       {
         "id": "mercedes",
         "name": "Mercedes",
         "year": 2025,
-        "positionDisplayOrder": 3,
-        "positionNumber": 3,
-        "positionText": "3",
+        "positionDisplayOrder": 2,
+        "positionNumber": 2,
+        "positionText": "2",
         "constructorId": "mercedes",
         "engineManufacturerId": "mercedes",
-        "points": 355,
+        "points": 398,
         "wins": 2
       },
       {
         "id": "red-bull",
         "name": "Red Bull",
         "year": 2025,
+        "positionDisplayOrder": 3,
+        "positionNumber": 3,
+        "positionText": "3",
+        "constructorId": "red-bull",
+        "engineManufacturerId": "honda-rbpt",
+        "points": 366,
+        "wins": 5
+      },
+      {
+        "id": "ferrari",
+        "name": "Ferrari",
+        "year": 2025,
         "positionDisplayOrder": 4,
         "positionNumber": 4,
         "positionText": "4",
-        "constructorId": "red-bull",
-        "engineManufacturerId": "honda-rbpt",
-        "points": 346,
-        "wins": 5
+        "constructorId": "ferrari",
+        "engineManufacturerId": "ferrari",
+        "points": 362,
+        "wins": 0
       },
       {
         "id": "williams",
@@ -72,7 +72,7 @@
         "positionText": "6",
         "constructorId": "racing-bulls",
         "engineManufacturerId": "honda-rbpt",
-        "points": 72,
+        "points": 82,
         "wins": 0
       },
       {
@@ -84,7 +84,7 @@
         "positionText": "7",
         "constructorId": "aston-martin",
         "engineManufacturerId": "mercedes",
-        "points": 69,
+        "points": 72,
         "wins": 0
       },
       {
@@ -96,7 +96,7 @@
         "positionText": "8",
         "constructorId": "haas",
         "engineManufacturerId": "ferrari",
-        "points": 62,
+        "points": 70,
         "wins": 0
       },
       {
@@ -108,7 +108,7 @@
         "positionText": "9",
         "constructorId": "kick-sauber",
         "engineManufacturerId": "ferrari",
-        "points": 60,
+        "points": 62,
         "wins": 0
       },
       {
@@ -120,7 +120,7 @@
         "positionText": "10",
         "constructorId": "alpine",
         "engineManufacturerId": "renault",
-        "points": 20,
+        "points": 22,
         "wins": 0
       }
     ]
