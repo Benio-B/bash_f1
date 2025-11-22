@@ -1,0 +1,39 @@
+{
+  "year": 2025,
+  "version": "v2025.21.1",
+  "data": {
+    "grandPrix": {
+      "name": "Las Vegas GP",
+      "country": "United States of America",
+      "flagEmoji": "🇺🇸",
+      "alphaCode": "US",
+      "iconUrl": "https://flagcdn.com/w320/us.png",
+      "iconV2Url": "https://flagsapi.com/US/shiny/64.png",
+      "city": "Las Vegas",
+      "round": 22,
+      "type": "STREET",
+      "date": "2025-11-23",
+      "time": "04:00",
+      "qualifyingDate": "2025-11-22",
+      "qualifyingTime": "04:00",
+      "sprintRaceDate": null,
+      "sprintRaceTime": null,
+      "laps": 50,
+      "courseLength": 6.201,
+      "distance": 309.958,
+      "latitude": 36.175,
+      "longitude": -115.136389,
+      "circuitName": "Las Vegas Street Circuit",
+      "fastestLap": {
+        "driverId": "lando-norris",
+        "constructorId": "mclaren",
+        "time": "1:34.876",
+        "year": 2024,
+        "driverName": "Lando Norris",
+        "driverAbbreviation": "NOR",
+        "constructorName": "McLaren"
+      },
+      "circuitUrl": "https://media.formula1.com/image/upload/f_auto/q_auto/v1677244985/content/dam/fom-website/2018-redesign-assets/Circuit%20maps%2016x9/Las_Vegas_Circuit.png.transform/7col-retina/image.png"
+    }
+  }
+}
