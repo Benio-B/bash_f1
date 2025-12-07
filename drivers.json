@@ -1,13 +1,13 @@
 {
   "year": 2025,
-  "version": "v2025.23.0",
+  "version": "v2025.24.0",
   "data": {
     "drivers": [
       {
         "id": "lando-norris",
         "name": "Lando Norris",
         "abbreviation": "NOR",
-        "points": 408,
+        "points": 423,
         "positionNumber": 1,
         "wins": 7,
         "driverId": "lando-norris",
@@ -18,9 +18,9 @@
         "id": "max-verstappen",
         "name": "Max Verstappen",
         "abbreviation": "VER",
-        "points": 396,
+        "points": 421,
         "positionNumber": 2,
-        "wins": 7,
+        "wins": 8,
         "driverId": "max-verstappen",
         "constructorId": "red-bull",
         "constructorName": "Red Bull"
@@ -29,7 +29,7 @@
         "id": "oscar-piastri",
         "name": "Oscar Piastri",
         "abbreviation": "PIA",
-        "points": 392,
+        "points": 410,
         "positionNumber": 3,
         "wins": 7,
         "driverId": "oscar-piastri",
@@ -40,7 +40,7 @@
         "id": "george-russell",
         "name": "George Russell",
         "abbreviation": "RUS",
-        "points": 309,
+        "points": 319,
         "positionNumber": 4,
         "wins": 2,
         "driverId": "george-russell",
@@ -51,7 +51,7 @@
         "id": "charles-leclerc",
         "name": "Charles Leclerc",
         "abbreviation": "LEC",
-        "points": 230,
+        "points": 242,
         "positionNumber": 5,
         "wins": 0,
         "driverId": "charles-leclerc",
@@ -62,7 +62,7 @@
         "id": "lewis-hamilton",
         "name": "Lewis Hamilton",
         "abbreviation": "HAM",
-        "points": 152,
+        "points": 156,
         "positionNumber": 6,
         "wins": 0,
         "driverId": "lewis-hamilton",
@@ -103,21 +103,21 @@
         "constructorName": "Williams"
       },
       {
-        "id": "isack-hadjar",
-        "name": "Isack Hadjar",
-        "abbreviation": "HAD",
-        "points": 51,
+        "id": "fernando-alonso",
+        "name": "Fernando Alonso",
+        "abbreviation": "ALO",
+        "points": 56,
         "positionNumber": 10,
         "wins": 0,
-        "driverId": "isack-hadjar",
-        "constructorId": "racing-bulls",
-        "constructorName": "Racing Bulls"
+        "driverId": "fernando-alonso",
+        "constructorId": "aston-martin",
+        "constructorName": "Aston Martin"
       },
       {
         "id": "nico-hulkenberg",
         "name": "Nico Hülkenberg",
         "abbreviation": "HUL",
-        "points": 49,
+        "points": 51,
         "positionNumber": 11,
         "wins": 0,
         "driverId": "nico-hulkenberg",
@@ -125,15 +125,15 @@
         "constructorName": "Kick Sauber"
       },
       {
-        "id": "fernando-alonso",
-        "name": "Fernando Alonso",
-        "abbreviation": "ALO",
-        "points": 48,
+        "id": "isack-hadjar",
+        "name": "Isack Hadjar",
+        "abbreviation": "HAD",
+        "points": 51,
         "positionNumber": 12,
         "wins": 0,
-        "driverId": "fernando-alonso",
-        "constructorId": "aston-martin",
-        "constructorName": "Aston Martin"
+        "driverId": "isack-hadjar",
+        "constructorId": "racing-bulls",
+        "constructorName": "Racing Bulls"
       },
       {
         "id": "oliver-bearman",
@@ -158,22 +158,11 @@
         "constructorName": ""
       },
       {
-        "id": "yuki-tsunoda",
-        "name": "Yuki Tsunoda",
-        "abbreviation": "TSU",
-        "points": 33,
-        "positionNumber": 15,
-        "wins": 0,
-        "driverId": "yuki-tsunoda",
-        "constructorId": "red-bull\nracing-bulls",
-        "constructorName": ""
-      },
-      {
         "id": "esteban-ocon",
         "name": "Esteban Ocon",
         "abbreviation": "OCO",
-        "points": 32,
-        "positionNumber": 16,
+        "points": 38,
+        "positionNumber": 15,
         "wins": 0,
         "driverId": "esteban-ocon",
         "constructorId": "haas",
@@ -183,12 +172,23 @@
         "id": "lance-stroll",
         "name": "Lance Stroll",
         "abbreviation": "STR",
-        "points": 32,
-        "positionNumber": 17,
+        "points": 33,
+        "positionNumber": 16,
         "wins": 0,
         "driverId": "lance-stroll",
         "constructorId": "aston-martin",
         "constructorName": "Aston Martin"
+      },
+      {
+        "id": "yuki-tsunoda",
+        "name": "Yuki Tsunoda",
+        "abbreviation": "TSU",
+        "points": 33,
+        "positionNumber": 17,
+        "wins": 0,
+        "driverId": "yuki-tsunoda",
+        "constructorId": "red-bull\nracing-bulls",
+        "constructorName": ""
       },
       {
         "id": "pierre-gasly",
