@@ -1,6 +1,6 @@
 {
   "year": 2025,
-  "version": "v2026.0.0.beta1",
+  "version": "v2026.0.0.beta2",
   "data": {
     "constructors": [
       {
@@ -13,6 +13,7 @@
         "constructorId": "mclaren",
         "engineManufacturerId": "mercedes",
         "points": 833,
+        "championshipWon": true,
         "wins": 14
       },
       {
@@ -25,6 +26,7 @@
         "constructorId": "mercedes",
         "engineManufacturerId": "mercedes",
         "points": 469,
+        "championshipWon": false,
         "wins": 2
       },
       {
@@ -37,6 +39,7 @@
         "constructorId": "red-bull",
         "engineManufacturerId": "honda-rbpt",
         "points": 451,
+        "championshipWon": false,
         "wins": 8
       },
       {
@@ -49,6 +52,7 @@
         "constructorId": "ferrari",
         "engineManufacturerId": "ferrari",
         "points": 398,
+        "championshipWon": false,
         "wins": 0
       },
       {
@@ -61,6 +65,7 @@
         "constructorId": "williams",
         "engineManufacturerId": "mercedes",
         "points": 137,
+        "championshipWon": false,
         "wins": 0
       },
       {
@@ -73,6 +78,7 @@
         "constructorId": "racing-bulls",
         "engineManufacturerId": "honda-rbpt",
         "points": 92,
+        "championshipWon": false,
         "wins": 0
       },
       {
@@ -85,6 +91,7 @@
         "constructorId": "aston-martin",
         "engineManufacturerId": "mercedes",
         "points": 89,
+        "championshipWon": false,
         "wins": 0
       },
       {
@@ -97,6 +104,7 @@
         "constructorId": "haas",
         "engineManufacturerId": "ferrari",
         "points": 79,
+        "championshipWon": false,
         "wins": 0
       },
       {
@@ -109,6 +117,7 @@
         "constructorId": "kick-sauber",
         "engineManufacturerId": "ferrari",
         "points": 70,
+        "championshipWon": false,
         "wins": 0
       },
       {
@@ -121,6 +130,7 @@
         "constructorId": "alpine",
         "engineManufacturerId": "renault",
         "points": 22,
+        "championshipWon": false,
         "wins": 0
       }
     ]
