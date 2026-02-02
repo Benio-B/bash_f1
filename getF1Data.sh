@@ -5,7 +5,7 @@ apt-get install wget;
 apt-get install unzip;
 
 force_update="${1:-false}";
-year_GP="${2:-2025}";
+year_GP="${2:-2026}";
 
 current_version=$(curl -s GET "https://api.github.com/repos/f1db/f1db/tags?per_page=1" | jq -r '.[].name');
 
