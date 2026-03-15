@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "version": "v2026.1.0",
+  "version": "v2026.2.0",
   "data": {
     "constructors": [
       {
@@ -12,9 +12,9 @@
         "positionText": "1",
         "constructorId": "mercedes",
         "engineManufacturerId": "mercedes",
-        "points": 43,
+        "points": 98,
         "championshipWon": false,
-        "wins": 1
+        "wins": 2
       },
       {
         "id": "ferrari",
@@ -25,7 +25,7 @@
         "positionText": "2",
         "constructorId": "ferrari",
         "engineManufacturerId": "ferrari",
-        "points": 27,
+        "points": 67,
         "championshipWon": false,
         "wins": 0
       },
@@ -38,20 +38,7 @@
         "positionText": "3",
         "constructorId": "mclaren",
         "engineManufacturerId": "mercedes",
-        "points": 10,
-        "championshipWon": false,
-        "wins": 0
-      },
-      {
-        "id": "red-bull",
-        "name": "Red Bull",
-        "year": 2026,
-        "positionDisplayOrder": 4,
-        "positionNumber": 4,
-        "positionText": "4",
-        "constructorId": "red-bull",
-        "engineManufacturerId": "red-bull-ford",
-        "points": 8,
+        "points": 18,
         "championshipWon": false,
         "wins": 0
       },
@@ -59,12 +46,25 @@
         "id": "haas",
         "name": "Haas",
         "year": 2026,
+        "positionDisplayOrder": 4,
+        "positionNumber": 4,
+        "positionText": "4",
+        "constructorId": "haas",
+        "engineManufacturerId": "ferrari",
+        "points": 17,
+        "championshipWon": false,
+        "wins": 0
+      },
+      {
+        "id": "red-bull",
+        "name": "Red Bull",
+        "year": 2026,
         "positionDisplayOrder": 5,
         "positionNumber": 5,
         "positionText": "5",
-        "constructorId": "haas",
-        "engineManufacturerId": "ferrari",
-        "points": 6,
+        "constructorId": "red-bull",
+        "engineManufacturerId": "red-bull-ford",
+        "points": 12,
         "championshipWon": false,
         "wins": 0
       },
@@ -77,20 +77,7 @@
         "positionText": "6",
         "constructorId": "racing-bulls",
         "engineManufacturerId": "red-bull-ford",
-        "points": 4,
-        "championshipWon": false,
-        "wins": 0
-      },
-      {
-        "id": "audi",
-        "name": "Audi",
-        "year": 2026,
-        "positionDisplayOrder": 7,
-        "positionNumber": 7,
-        "positionText": "7",
-        "constructorId": "audi",
-        "engineManufacturerId": "audi",
-        "points": 2,
+        "points": 12,
         "championshipWon": false,
         "wins": 0
       },
@@ -98,12 +85,25 @@
         "id": "alpine",
         "name": "Alpine",
         "year": 2026,
+        "positionDisplayOrder": 7,
+        "positionNumber": 7,
+        "positionText": "7",
+        "constructorId": "alpine",
+        "engineManufacturerId": "mercedes",
+        "points": 10,
+        "championshipWon": false,
+        "wins": 0
+      },
+      {
+        "id": "audi",
+        "name": "Audi",
+        "year": 2026,
         "positionDisplayOrder": 8,
         "positionNumber": 8,
         "positionText": "8",
-        "constructorId": "alpine",
-        "engineManufacturerId": "mercedes",
-        "points": 1,
+        "constructorId": "audi",
+        "engineManufacturerId": "audi",
+        "points": 2,
         "championshipWon": false,
         "wins": 0
       },
@@ -116,7 +116,7 @@
         "positionText": "9",
         "constructorId": "williams",
         "engineManufacturerId": "mercedes",
-        "points": 0,
+        "points": 2,
         "championshipWon": false,
         "wins": 0
       },
