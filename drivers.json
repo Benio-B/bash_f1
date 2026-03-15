@@ -1,7 +1,250 @@
 {
   "year": 2026,
-  "version": "",
+  "version": "v2026.1.0",
   "data": {
-    "drivers": []
+    "drivers": [
+      {
+        "id": "george-russell",
+        "name": "George Russell",
+        "abbreviation": "RUS",
+        "points": 25,
+        "positionNumber": 1,
+        "wins": 1,
+        "driverId": "george-russell",
+        "constructorId": "mercedes",
+        "constructorName": "Mercedes"
+      },
+      {
+        "id": "kimi-antonelli",
+        "name": "Kimi Antonelli",
+        "abbreviation": "ANT",
+        "points": 18,
+        "positionNumber": 2,
+        "wins": 0,
+        "driverId": "kimi-antonelli",
+        "constructorId": "mercedes",
+        "constructorName": "Mercedes"
+      },
+      {
+        "id": "charles-leclerc",
+        "name": "Charles Leclerc",
+        "abbreviation": "LEC",
+        "points": 15,
+        "positionNumber": 3,
+        "wins": 0,
+        "driverId": "charles-leclerc",
+        "constructorId": "ferrari",
+        "constructorName": "Ferrari"
+      },
+      {
+        "id": "lewis-hamilton",
+        "name": "Lewis Hamilton",
+        "abbreviation": "HAM",
+        "points": 12,
+        "positionNumber": 4,
+        "wins": 0,
+        "driverId": "lewis-hamilton",
+        "constructorId": "ferrari",
+        "constructorName": "Ferrari"
+      },
+      {
+        "id": "lando-norris",
+        "name": "Lando Norris",
+        "abbreviation": "NOR",
+        "points": 10,
+        "positionNumber": 5,
+        "wins": 0,
+        "driverId": "lando-norris",
+        "constructorId": "mclaren",
+        "constructorName": "McLaren"
+      },
+      {
+        "id": "max-verstappen",
+        "name": "Max Verstappen",
+        "abbreviation": "VER",
+        "points": 8,
+        "positionNumber": 6,
+        "wins": 0,
+        "driverId": "max-verstappen",
+        "constructorId": "red-bull",
+        "constructorName": "Red Bull"
+      },
+      {
+        "id": "oliver-bearman",
+        "name": "Oliver Bearman",
+        "abbreviation": "BEA",
+        "points": 6,
+        "positionNumber": 7,
+        "wins": 0,
+        "driverId": "oliver-bearman",
+        "constructorId": "haas",
+        "constructorName": "Haas"
+      },
+      {
+        "id": "arvid-lindblad",
+        "name": "Arvid Lindblad",
+        "abbreviation": "LIN",
+        "points": 4,
+        "positionNumber": 8,
+        "wins": 0,
+        "driverId": "arvid-lindblad",
+        "constructorId": "racing-bulls",
+        "constructorName": "Racing Bulls"
+      },
+      {
+        "id": "gabriel-bortoleto",
+        "name": "Gabriel Bortoleto",
+        "abbreviation": "BOR",
+        "points": 2,
+        "positionNumber": 9,
+        "wins": 0,
+        "driverId": "gabriel-bortoleto",
+        "constructorId": "audi",
+        "constructorName": "Audi"
+      },
+      {
+        "id": "pierre-gasly",
+        "name": "Pierre Gasly",
+        "abbreviation": "GAS",
+        "points": 1,
+        "positionNumber": 10,
+        "wins": 0,
+        "driverId": "pierre-gasly",
+        "constructorId": "alpine",
+        "constructorName": "Alpine"
+      },
+      {
+        "id": "esteban-ocon",
+        "name": "Esteban Ocon",
+        "abbreviation": "OCO",
+        "points": 0,
+        "positionNumber": 11,
+        "wins": 0,
+        "driverId": "esteban-ocon",
+        "constructorId": "haas",
+        "constructorName": "Haas"
+      },
+      {
+        "id": "alexander-albon",
+        "name": "Alexander Albon",
+        "abbreviation": "ALB",
+        "points": 0,
+        "positionNumber": 12,
+        "wins": 0,
+        "driverId": "alexander-albon",
+        "constructorId": "williams",
+        "constructorName": "Williams"
+      },
+      {
+        "id": "liam-lawson",
+        "name": "Liam Lawson",
+        "abbreviation": "LAW",
+        "points": 0,
+        "positionNumber": 13,
+        "wins": 0,
+        "driverId": "liam-lawson",
+        "constructorId": "racing-bulls",
+        "constructorName": "Racing Bulls"
+      },
+      {
+        "id": "franco-colapinto",
+        "name": "Franco Colapinto",
+        "abbreviation": "COL",
+        "points": 0,
+        "positionNumber": 14,
+        "wins": 0,
+        "driverId": "franco-colapinto",
+        "constructorId": "alpine",
+        "constructorName": "Alpine"
+      },
+      {
+        "id": "carlos-sainz-jr",
+        "name": "Carlos Sainz Jr.",
+        "abbreviation": "SAI",
+        "points": 0,
+        "positionNumber": 15,
+        "wins": 0,
+        "driverId": "carlos-sainz-jr",
+        "constructorId": "williams",
+        "constructorName": "Williams"
+      },
+      {
+        "id": "sergio-perez",
+        "name": "Sergio Pérez",
+        "abbreviation": "PER",
+        "points": 0,
+        "positionNumber": 16,
+        "wins": 0,
+        "driverId": "sergio-perez",
+        "constructorId": "cadillac",
+        "constructorName": "Cadillac"
+      },
+      {
+        "id": "isack-hadjar",
+        "name": "Isack Hadjar",
+        "abbreviation": "HAD",
+        "points": 0,
+        "positionNumber": 17,
+        "wins": 0,
+        "driverId": "isack-hadjar",
+        "constructorId": "red-bull",
+        "constructorName": "Red Bull"
+      },
+      {
+        "id": "oscar-piastri",
+        "name": "Oscar Piastri",
+        "abbreviation": "PIA",
+        "points": 0,
+        "positionNumber": 18,
+        "wins": 0,
+        "driverId": "oscar-piastri",
+        "constructorId": "mclaren",
+        "constructorName": "McLaren"
+      },
+      {
+        "id": "nico-hulkenberg",
+        "name": "Nico Hülkenberg",
+        "abbreviation": "HUL",
+        "points": 0,
+        "positionNumber": 19,
+        "wins": 0,
+        "driverId": "nico-hulkenberg",
+        "constructorId": "audi",
+        "constructorName": "Audi"
+      },
+      {
+        "id": "fernando-alonso",
+        "name": "Fernando Alonso",
+        "abbreviation": "ALO",
+        "points": 0,
+        "positionNumber": 20,
+        "wins": 0,
+        "driverId": "fernando-alonso",
+        "constructorId": "aston-martin",
+        "constructorName": "Aston Martin"
+      },
+      {
+        "id": "lance-stroll",
+        "name": "Lance Stroll",
+        "abbreviation": "STR",
+        "wins": 0,
+        "points": 0,
+        "driverId": "lance-stroll",
+        "positionNumber": 20,
+        "constructorId": "aston-martin",
+        "constructorName": "Aston Martin"
+      },
+      {
+        "id": "valtteri-bottas",
+        "name": "Valtteri Bottas",
+        "abbreviation": "BOT",
+        "points": 0,
+        "positionNumber": 21,
+        "wins": 0,
+        "driverId": "valtteri-bottas",
+        "constructorId": "cadillac",
+        "constructorName": "Cadillac"
+      }
+    ]
   }
 }
