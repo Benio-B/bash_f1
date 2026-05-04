@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "version": "v2026.4.0",
+  "version": "v2026.4.1",
   "data": {
     "drivers": [
       {
@@ -29,7 +29,7 @@
         "id": "charles-leclerc",
         "name": "Charles Leclerc",
         "abbreviation": "LEC",
-        "points": 63,
+        "points": 59,
         "positionNumber": 3,
         "wins": 0,
         "driverId": "charles-leclerc",
@@ -51,7 +51,7 @@
         "id": "lewis-hamilton",
         "name": "Lewis Hamilton",
         "abbreviation": "HAM",
-        "points": 49,
+        "points": 51,
         "positionNumber": 5,
         "wins": 0,
         "driverId": "lewis-hamilton",
@@ -117,7 +117,7 @@
         "id": "franco-colapinto",
         "name": "Franco Colapinto",
         "abbreviation": "COL",
-        "points": 5,
+        "points": 7,
         "positionNumber": 11,
         "wins": 0,
         "driverId": "franco-colapinto",
