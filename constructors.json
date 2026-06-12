@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "version": "v2026.6.1",
+  "version": "v2026.6.2",
   "data": {
     "constructors": [
       {
@@ -38,7 +38,7 @@
         "positionText": "3",
         "constructorId": "mclaren",
         "engineManufacturerId": "mercedes",
-        "points": 118,
+        "points": 116,
         "championshipWon": false,
         "wins": 0
       },
@@ -51,7 +51,7 @@
         "positionText": "4",
         "constructorId": "red-bull",
         "engineManufacturerId": "red-bull-ford",
-        "points": 72,
+        "points": 69,
         "championshipWon": false,
         "wins": 0
       },
@@ -64,7 +64,7 @@
         "positionText": "5",
         "constructorId": "alpine",
         "engineManufacturerId": "mercedes",
-        "points": 41,
+        "points": 50,
         "championshipWon": false,
         "wins": 0
       },
@@ -77,7 +77,7 @@
         "positionText": "6",
         "constructorId": "racing-bulls",
         "engineManufacturerId": "red-bull-ford",
-        "points": 39,
+        "points": 35,
         "championshipWon": false,
         "wins": 0
       },

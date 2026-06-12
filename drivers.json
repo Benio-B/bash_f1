@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "version": "v2026.6.1",
+  "version": "v2026.6.2",
   "data": {
     "drivers": [
       {
@@ -51,7 +51,7 @@
         "id": "oscar-piastri",
         "name": "Oscar Piastri",
         "abbreviation": "PIA",
-        "points": 60,
+        "points": 58,
         "positionNumber": 5,
         "wins": 0,
         "driverId": "oscar-piastri",
@@ -81,11 +81,22 @@
         "constructorName": "Red Bull"
       },
       {
+        "id": "pierre-gasly",
+        "name": "Pierre Gasly",
+        "abbreviation": "GAS",
+        "points": 35,
+        "positionNumber": 8,
+        "wins": 0,
+        "driverId": "pierre-gasly",
+        "constructorId": "alpine",
+        "constructorName": "Alpine"
+      },
+      {
         "id": "isack-hadjar",
         "name": "Isack Hadjar",
         "abbreviation": "HAD",
-        "points": 29,
-        "positionNumber": 8,
+        "points": 26,
+        "positionNumber": 9,
         "wins": 0,
         "driverId": "isack-hadjar",
         "constructorId": "red-bull",
@@ -95,23 +106,12 @@
         "id": "liam-lawson",
         "name": "Liam Lawson",
         "abbreviation": "LAW",
-        "points": 26,
-        "positionNumber": 9,
+        "points": 24,
+        "positionNumber": 10,
         "wins": 0,
         "driverId": "liam-lawson",
         "constructorId": "racing-bulls",
         "constructorName": "Racing Bulls"
-      },
-      {
-        "id": "pierre-gasly",
-        "name": "Pierre Gasly",
-        "abbreviation": "GAS",
-        "points": 26,
-        "positionNumber": 10,
-        "wins": 0,
-        "driverId": "pierre-gasly",
-        "constructorId": "alpine",
-        "constructorName": "Alpine"
       },
       {
         "id": "oliver-bearman",
@@ -139,7 +139,7 @@
         "id": "arvid-lindblad",
         "name": "Arvid Lindblad",
         "abbreviation": "LIN",
-        "points": 13,
+        "points": 11,
         "positionNumber": 13,
         "wins": 0,
         "driverId": "arvid-lindblad",
