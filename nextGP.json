@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "version": "v2026.7.0",
+  "version": "v2026.8.0",
   "data": {
     "grandPrix": {
       "name": "Austrian GP",
@@ -24,6 +24,15 @@
       "latitude": 47.219722,
       "longitude": 14.764722,
       "circuitName": "Red Bull Ring",
+      "fastestLap": {
+        "driverId": "kimi-antonelli",
+        "constructorId": "mercedes",
+        "time": "1:10.374",
+        "year": 2026,
+        "driverName": "Kimi Antonelli",
+        "driverAbbreviation": "ANT",
+        "constructorName": "Mercedes"
+      },
       "circuitUrl": "https://media.formula1.com/image/upload/f_auto/q_auto/v1677244985/content/dam/fom-website/2018-redesign-assets/Circuit%20maps%2016x9/Austria_Circuit.png.transform/7col-retina/image.png"
     }
   }
