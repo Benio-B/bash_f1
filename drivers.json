@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "version": "v2026.8.0",
+  "version": "v2026.8.1",
   "data": {
     "drivers": [
       {
@@ -38,7 +38,7 @@
       },
       {
         "id": "oscar-piastri",
-        "name": "Oscar Jack Piastri",
+        "name": "Oscar Piastri",
         "abbreviation": "PIA",
         "points": 80,
         "positionNumber": 4,
