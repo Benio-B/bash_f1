@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "version": "v2026.13.0",
+  "version": "v2026.14.0",
   "data": {
     "grandPrix": {
       "name": "Spanish GP",
@@ -24,6 +24,15 @@
       "latitude": 40.465278,
       "longitude": -3.615278,
       "circuitName": "Circuito de Madring",
+      "fastestLap": {
+        "driverId": "george-russell",
+        "constructorId": "mercedes",
+        "time": "1:35.587",
+        "year": 2026,
+        "driverName": "George Russell",
+        "driverAbbreviation": "RUS",
+        "constructorName": "Mercedes"
+      },
       "circuitUrl": "https://media.formula1.com/image/upload/f_auto/q_auto/v1677244985/content/dam/fom-website/2018-redesign-assets/Circuit%20maps%2016x9/Spain_Circuit.png.transform/7col-retina/image.png"
     }
   }

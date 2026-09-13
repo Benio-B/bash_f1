@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "version": "v2026.13.0",
+  "version": "v2026.14.0",
   "data": {
     "constructors": [
       {
@@ -14,7 +14,7 @@
         "engineManufacturerId": "mercedes",
         "points": 468,
         "championshipWon": false,
-        "wins": 9
+        "wins": 10
       },
       {
         "id": "ferrari",
