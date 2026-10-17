@@ -1,0 +1,39 @@
+{
+  "year": 2026,
+  "version": "v2026.18.0-dev-1",
+  "data": {
+    "grandPrix": {
+      "name": "United States GP",
+      "country": "United States of America",
+      "flagEmoji": "🇺🇸",
+      "alphaCode": "US",
+      "iconUrl": "https://flagcdn.com/w320/us.png",
+      "iconV2Url": "https://flagsapi.com/US/shiny/64.png",
+      "city": "Austin",
+      "round": 18,
+      "type": "RACE",
+      "date": "2026-10-25",
+      "time": "20:00",
+      "qualifyingDate": "2026-10-24",
+      "qualifyingTime": "21:00",
+      "sprintRaceDate": null,
+      "sprintRaceTime": null,
+      "laps": 56,
+      "courseLength": 5.513,
+      "distance": 308.405,
+      "latitude": 30.132778,
+      "longitude": -97.641111,
+      "circuitName": "Circuit of the Americas",
+      "fastestLap": {
+        "driverId": "charles-leclerc",
+        "constructorId": "ferrari",
+        "time": "1:36.169",
+        "year": 2019,
+        "driverName": "Charles Leclerc",
+        "driverAbbreviation": "LEC",
+        "constructorName": "Ferrari"
+      },
+      "circuitUrl": "https://media.formula1.com/image/upload/f_auto/q_auto/v1677244985/content/dam/fom-website/2018-redesign-assets/Circuit%20maps%2016x9/USA_Circuit.png.transform/7col-retina/image.png"
+    }
+  }
+}
