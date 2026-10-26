@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "version": "v2026.18.0-dev-1",
+  "version": "v2026.18.0",
   "data": {
     "constructors": [
       {
@@ -12,9 +12,9 @@
         "positionText": "1",
         "constructorId": "mercedes",
         "engineManufacturerId": "mercedes",
-        "points": 578,
+        "points": 607,
         "championshipWon": false,
-        "wins": 11
+        "wins": 12
       },
       {
         "id": "ferrari",
@@ -25,20 +25,7 @@
         "positionText": "2",
         "constructorId": "ferrari",
         "engineManufacturerId": "ferrari",
-        "points": 444,
-        "championshipWon": false,
-        "wins": 2
-      },
-      {
-        "id": "mclaren",
-        "name": "McLaren",
-        "year": 2026,
-        "positionDisplayOrder": 3,
-        "positionNumber": 3,
-        "positionText": "3",
-        "constructorId": "mclaren",
-        "engineManufacturerId": "mercedes",
-        "points": 339,
+        "points": 474,
         "championshipWon": false,
         "wins": 2
       },
@@ -46,12 +33,25 @@
         "id": "red-bull",
         "name": "Red Bull",
         "year": 2026,
+        "positionDisplayOrder": 3,
+        "positionNumber": 3,
+        "positionText": "3",
+        "constructorId": "red-bull",
+        "engineManufacturerId": "red-bull-ford",
+        "points": 355,
+        "championshipWon": false,
+        "wins": 2
+      },
+      {
+        "id": "mclaren",
+        "name": "McLaren",
+        "year": 2026,
         "positionDisplayOrder": 4,
         "positionNumber": 4,
         "positionText": "4",
-        "constructorId": "red-bull",
-        "engineManufacturerId": "red-bull-ford",
-        "points": 332,
+        "constructorId": "mclaren",
+        "engineManufacturerId": "mercedes",
+        "points": 355,
         "championshipWon": false,
         "wins": 2
       },
@@ -64,7 +64,7 @@
         "positionText": "5",
         "constructorId": "racing-bulls",
         "engineManufacturerId": "red-bull-ford",
-        "points": 100,
+        "points": 102,
         "championshipWon": false,
         "wins": 0
       },
@@ -77,7 +77,7 @@
         "positionText": "6",
         "constructorId": "alpine",
         "engineManufacturerId": "mercedes",
-        "points": 68,
+        "points": 69,
         "championshipWon": false,
         "wins": 0
       },
